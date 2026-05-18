@@ -5,16 +5,34 @@
 > planification intelligente des approvisionnements — cas de Zenith Informatique et Bureautique »**
 > KASENDE NGELEKA Victoire — Master 2 Data Science orientée Supply Chain (UDBL, 2026).
 
-Ce dépôt implémente, en Python pur et open source, le pipeline décisionnel
-décrit dans le **chapitre 3 du mémoire** :
+Ce dépôt livre :
+1. un **système opérationnel** (pipeline Python + tests + outil interactif Streamlit) que Zenith peut utiliser au quotidien ;
+2. les **datasets et tableaux de bord Power BI** prêts à l'emploi ;
+3. l'intégralité des **résultats expérimentaux** pour le **Chapitre 4 du mémoire**.
+
+## Verdict de l'évaluation (6/6 hypothèses validées)
+
+| Hypothèse | Verdict | Valeur mesurée |
+|---|---|---:|
+| **H1** — Différenciation par classe | ✅ Validée | MAE -57.5 % vs pire modèle isolé |
+| **H2** — Complémentarité stat / ML | ✅ Validée | 2/3 classes ont leur modèle attendu en tête |
+| **H3** — Détection précoce d'obsolescence | ✅ Validée | Rappel 100 % (58/58) |
+| **H4** — Optimisation > heuristique | ✅ Validée | Coût total LP -28 % vs empirique |
+| **H5** — Impact financier mesurable | ✅ Validée | Bénéfice net +5 259 USD sur 3 mois |
+| **H6** — Faisabilité PME | ✅ Validée | Pipeline complet en 213 s, sans GPU, 20 dépendances |
+
+## Pipeline en 9 étapes
 
 ```
-Données brutes  →  Prétraitement  →  Feature engineering  →  Classification (ABC × XYZ + K-Means)
-                                                          →  Détection d'obsolescence (Isolation Forest)
-                                                          →  Prévision adaptée par classe
-                                                              (SARIMA / LightGBM / LSTM / Croston)
-                                                          →  Optimisation linéaire (PuLP / CBC)
-                                                          →  Évaluation (technique + financière)
+Étape 1 — Exploration (EDA)           → 15 figures + eda_summary.csv
+Étape 2 — Prétraitement & features    → zenith_clean.csv + zenith_features.csv
+Étape 3 — Classification ABC × XYZ × K-Means → classification_produits.csv
+Étape 4 — Détection d'obsolescence    → produits_obsoletes.csv (73 produits)
+Étape 5 — Prévisions adaptées         → previsions_complet.csv (1 500 lignes)
+Étape 6 — Optimisation LP             → commandes_recommandees.csv (866 lignes)
+Étape 7 — Évaluation globale          → rapport_evaluation.md
+Étape 8 — Outil Streamlit             → app/zenith_tool.py (6 pages)
+Étape 9 — Datasets Power BI           → outputs/powerbi/ (8 CSV + guide)
 ```
 
 ## Architecture du dépôt
@@ -22,29 +40,57 @@ Données brutes  →  Prétraitement  →  Feature engineering  →  Classificat
 ```
 zenith-supply-chain/
 ├── data/
-│   ├── raw/                          # données brutes (transactions + catalogue)
-│   ├── processed/                    # données nettoyées + features (.parquet)
-│   └── results/                      # sorties de chaque étape (.csv)
-├── src/zenith/
-│   ├── config.py                     # constantes (seuils ABC, budget, etc.)
-│   ├── preprocessing.py              # §3.3.1 nettoyage
-│   ├── feature_engineering.py        # §3.3.2 features temporelles / produit / financières
-│   ├── classification.py             # §3.4 ABC × XYZ + K-Means
-│   ├── obsolescence.py               # §3.5 Isolation Forest
-│   ├── forecasting.py                # §3.6 SARIMA / LightGBM / LSTM / Croston
-│   ├── optimization.py               # §3.7 MILP via PuLP
-│   ├── evaluation.py                 # §3.8 métriques techniques + financières
-│   └── viz.py                        # figures pour rapport / dashboard
-├── scripts/
-│   └── run_pipeline.py               # orchestrateur end-to-end
-├── notebooks/
-│   └── 01_exploration.ipynb          # EDA + lecture des résultats
-├── reports/
-│   ├── figures/                      # PNG pour le mémoire
-│   ├── tables/
-│   └── summary.md                    # synthèse exécution
+│   ├── raw/                # zenith_dataset_brut.csv, catalogue_produits_250.csv
+│   ├── processed/          # zenith_clean.csv (nettoyé)
+│   └── features/           # zenith_features.csv, product_features.csv
+├── src/                    # modules Python
+│   ├── __init__.py
+│   ├── utils.py
+│   ├── preprocessing.py    # §3.3 nettoyage + feature engineering
+│   ├── classification.py   # §3.4 ABC × XYZ + K-Means
+│   ├── obsolescence.py     # §3.5 Isolation Forest + règles métier
+│   ├── forecasting.py      # §3.6 SARIMA / LightGBM / LSTM-like / Croston
+│   ├── optimization.py     # §3.7 LP avec PuLP/CBC
+│   ├── evaluation.py       # §3.8 validation H1–H6
+│   └── powerbi_export.py   # construction du datamodel Power BI
+├── scripts/                # orchestrateurs ligne de commande
+│   ├── run_eda.py
+│   ├── run_preprocessing.py
+│   ├── run_classification.py
+│   ├── run_obsolescence.py
+│   ├── run_forecasting.py
+│   ├── run_optimization.py
+│   ├── run_evaluation.py
+│   └── run_powerbi_export.py
+├── notebooks/              # narratifs Jupyter (1 par étape)
+│   ├── 01_exploration.ipynb
+│   ├── 02_pretraitement.ipynb
+│   ├── 03_classification.ipynb
+│   ├── 04_obsolescence.ipynb
+│   ├── 05_previsions.ipynb
+│   ├── 06_optimisation.ipynb
+│   └── 07_evaluation.ipynb
+├── app/
+│   └── zenith_tool.py      # application Streamlit interactive (6 pages)
+├── tests/                  # 55 tests pytest passants
+│   ├── test_preprocessing.py
+│   ├── test_classification.py
+│   ├── test_obsolescence.py
+│   ├── test_forecasting.py
+│   ├── test_optimization.py
+│   ├── test_evaluation.py
+│   ├── test_app.py
+│   └── test_powerbi_export.py
+├── outputs/
+│   ├── figures/            # 40+ figures publication-ready
+│   ├── tables/             # 25+ CSV résultats + synthèses Markdown
+│   ├── models/             # signatures SARIMA, etc.
+│   ├── powerbi/            # 8 CSV pour Power BI + DASHBOARD_GUIDE.md
+│   └── rapport_evaluation.md  # rapport final pour Chapitre 4
+├── .streamlit/config.toml  # thème Zenith
 ├── requirements.txt
-└── setup.py
+├── setup.py
+└── README.md
 ```
 
 ## Installation
@@ -55,73 +101,84 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-## Exécution
+## Exécution du pipeline complet
 
 ```bash
-python scripts/run_pipeline.py
+# Une étape à la fois (recommandé) :
+python scripts/run_eda.py
+python scripts/run_preprocessing.py
+python scripts/run_classification.py
+python scripts/run_obsolescence.py
+python scripts/run_forecasting.py        # ~3 min
+python scripts/run_optimization.py
+python scripts/run_evaluation.py
+python scripts/run_powerbi_export.py
 ```
 
-Le script exécute les sept étapes du pipeline et produit :
+## Lancement de l'application interactive
 
-- `data/processed/transactions_clean.parquet` — données nettoyées + features
-- `data/processed/products_features.parquet` — table produit enrichie
-- `data/results/classification.csv` — ABC × XYZ + cluster K-Means
-- `data/results/obsolescence.csv` — score Isolation Forest + flag risque
-- `data/results/forecasts.csv` — prévisions mensuelles par produit
-- `data/results/forecast_metrics.csv` — MAE / RMSE / MAPE par produit
-- `data/results/forecast_metrics_by_class.csv` — synthèse par classe ABC × modèle
-- `data/results/optimization_plan.csv` — plan de commandes optimisé (MILP)
-- `data/results/baseline_plan.csv` — plan empirique (politique actuelle simulée)
-- `data/results/financial_comparison.csv` — KPI financiers comparés
-- `reports/figures/*.png` — visualisations
-- `reports/summary.md` — synthèse exécutive
+```bash
+streamlit run app/zenith_tool.py
+# puis ouvrir http://localhost:8501
+```
+
+**6 pages** dans la sidebar :
+1. 📊 Tableau de bord global
+2. 📦 Classification produits
+3. ⚠️ Alertes obsolescence
+4. 🔮 Prévisions de demande
+5. 🛒 Recommandations de commande
+6. 🧪 Simulation what-if (slider budget / niveau service)
+
+## Tableaux de bord Power BI
+
+1. Lancer `python scripts/run_powerbi_export.py` pour générer les 8 CSV dans
+   `outputs/powerbi/`.
+2. Ouvrir Power BI Desktop → **Accueil → Texte/CSV** → charger les 8 fichiers.
+3. Suivre **`outputs/powerbi/DASHBOARD_GUIDE.md`** pour créer les
+   4 dashboards : pilotage commercial, ABC × XYZ, alertes obsolescence,
+   optimisation des commandes.
+
+## Lancement des tests
+
+```bash
+PYTHONPATH=. pytest tests/ -v
+# 55 passed
+```
 
 ## Correspondance code ↔ mémoire
 
-| Chapitre / section | Module Python |
-|--------------------|---------------|
-| §3.3.1 Nettoyage   | `zenith.preprocessing.clean_dataset` |
-| §3.3.2 Features    | `zenith.feature_engineering.*` |
-| §3.3.3 Split temporel | `zenith.preprocessing.temporal_split` |
-| §3.4.1 Classification ABC | `zenith.classification.classify_abc` |
-| §3.4.2 Analyse XYZ | `zenith.classification.classify_xyz` |
-| §3.4.3 K-Means     | `zenith.classification.kmeans_clustering` |
-| §3.5 Isolation Forest | `zenith.obsolescence.detect_obsolescence` |
-| §3.6.2 SARIMA      | `zenith.forecasting.sarima_forecast` |
-| §3.6.3 LightGBM    | `zenith.forecasting.lightgbm_forecast` |
-| §3.6.4 LSTM        | `zenith.forecasting.lstm_forecast` |
-| §3.7 MILP          | `zenith.optimization.optimize_orders` |
-| §3.8 Évaluation    | `zenith.evaluation.*` |
+| Section du mémoire | Module / script |
+|---|---|
+| §3.3.1 Nettoyage | `src/preprocessing.py::clean_dataset` |
+| §3.3.2 Feature engineering | `src/preprocessing.py::engineer_features` |
+| §3.3.3 Split temporel | `src/utils.py::temporal_split` |
+| §3.4 Classification ABC × XYZ | `src/classification.py` |
+| §3.5 Isolation Forest | `src/obsolescence.py::detect_obsolescence` |
+| §3.6.2 SARIMA auto | `src/forecasting.py::sarima_auto` |
+| §3.6.3 LightGBM | `src/forecasting.py::lightgbm_forecast` |
+| §3.6.4 LSTM | `src/forecasting.py::lstm_like_forecast` |
+| §3.7 MILP / LP commandes | `src/optimization.py::optimize_orders` |
+| §3.8 Évaluation H1–H6 | `src/evaluation.py` |
 
-## Hypothèses de recherche validées
-
-- **H1 — Différenciation par classe** : `forecasting.choose_model_for_class` applique
-  un modèle distinct par couple (ABC, XYZ), conforme à la table 3.3 du mémoire.
-- **H2 — Complémentarité statistique / apprentissage** : SARIMA pour
-  produits saisonniers, LightGBM pour le gros du catalogue, LSTM (via MLP
-  séquentiel CPU) pour la classe A.
-- **H3 — Détection précoce d'obsolescence** : Isolation Forest +
-  règles métier dans `obsolescence.detect_obsolescence`.
-- **H4 — Optimisation supérieure à l'heuristique** : comparaison
-  `optimize_orders` vs `simulate_baseline_policy` dans `evaluation.compare_policies`.
-- **H5 — Validation par l'impact financier** : KPI `cout_total_simule_usd`,
-  `marge_perdue_usd`, `stock_moyen_immo_usd`, `taux_service_pct`.
-- **H6 — Faisabilité PME** : 100 % open source, CPU only, ~3 minutes
-  d'exécution sur un poste standard.
-
-## Paramètres clés (modifiables dans `src/zenith/config.py`)
+## Paramètres clés (modifiables dans `src/optimization.py`)
 
 | Paramètre | Valeur | Source |
-|-----------|--------|--------|
-| Seuil ABC A / B | 70 % / 90 % | §3.4.1 |
+|---|---:|---|
+| Seuils ABC A / B | 70 % / 90 % | §3.4.1 |
 | Seuils XYZ (CV) | 0.5 / 1.0 | §3.4.2 |
 | Contamination Isolation Forest | 10 % | §3.5.3 |
-| Délai livraison Dubaï / Chine | 35 / 55 jours | §3.7 |
-| Coût commande fixe | 50 USD | §3.7.2 |
-| Taux stockage | 0.1 % du coût d'achat / jour | §3.7.2 |
+| Délais Dubaï / Chine | 1 mois / 2 mois | §3.7 |
+| Coût fixe par commande | 50 USD | §3.7.2 |
+| Taux stockage | 0.1 % / jour | §3.7.2 |
+| Pénalité rupture client | +20 % | §3.7.2 |
+| Pondération service classe A | × 4.0 | §3.7.4 (soft) |
 | Budget mensuel par défaut | 500 000 USD | calibré sur historique |
-| Horizon de planification | 6 mois | couvre un cycle d'importation |
+| Capacité de stockage | 5 000 m³ | hypothèse PME |
+| Horizon de planification | 3 mois | §3.7 |
 
 ## Auteur
 
-KASENDE NGELEKA Victoire — `victorykasende@gmail.com`
+**KASENDE NGELEKA Victoire** — `victorykasende@gmail.com`
+Master 2 Data Science orientée Supply Chain — Université Don Bosco de
+Lubumbashi — Juin 2026.
