@@ -1,0 +1,12 @@
+indicateur,politique_empirique,politique_optimisee,delta,delta_pct
+nb_commandes,285.0,177.0,-108.0,-37.89
+quantite_commandee,14508.0,3824.0,-10684.0,-73.64
+valeur_commande_totale_usd,899079.75,290449.7,-608630.05,-67.69
+stock_moyen_immo_usd,971.59,405.57,-566.02,-58.26
+ruptures_unites,3454.67,3371.17,-83.5,-2.42
+marge_perdue_usd,40629.61,39718.33,-911.28,-2.24
+cout_stockage_usd,21860.75,6460.75,-15400.0,-70.45
+cout_commandes_usd,14250.0,8850.0,-5400.0,-37.89
+cout_total_simule_usd,76740.36,55029.07,-21711.29,-28.29
+ca_realise_usd,714877.11,719156.77,4279.66,0.6
+taux_service_pct,69.19,69.94,0.75,1.08
