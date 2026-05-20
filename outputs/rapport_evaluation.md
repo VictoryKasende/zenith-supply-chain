@@ -7,11 +7,11 @@ Ce rapport synthétise la validation des six hypothèses de recherche
 
 | Code | Hypothèse | Verdict | Valeur mesurée | Seuil |
 |---|---|---|---:|---:|
-| H1 | Différenciation par classe | ✅ Validée | 0.425 | 1.0 |
+| H1 | Différenciation par classe | ✅ Validée | 0.426 | 1.0 |
 | H2 | Complémentarité statistique ↔ apprentissage | ✅ Validée | 0.667 | 0.6666666666666666 |
 | H3 | Détection précoce d'obsolescence | ✅ Validée | 1.0 | 0.8 |
-| H4 | Optimisation supérieure à l'heuristique | ✅ Validée | 0.717 | 1.0 |
-| H5 | Impact financier mesurable | ✅ Validée | 5258.862 | 0.0 |
+| H4 | Optimisation supérieure à l'heuristique | ✅ Validée | 0.703 | 1.0 |
+| H5 | Impact financier mesurable | ✅ Validée | 5392.082 | 0.0 |
 | H6 | Faisabilité PME (frugalité) | ✅ Validée | 3.0 | 3.0 |
 
 ## Détails par hypothèse
@@ -20,10 +20,10 @@ Ce rapport synthétise la validation des six hypothèses de recherche
 
 - **Test** : MAE moyen pipeline différencié vs MAE moyen du pire modèle isolé
 - **Critère** : ratio < 1
-- **Valeur mesurée** : 0.425
+- **Valeur mesurée** : 0.426
 - **Seuil** : 1.0
 - **Verdict** : **Validée**
-- **Détails** : {'mae_pipeline_differencie': 9.062, 'mae_pire_modele_isole': 21.312, 'gain_relatif_pct': 57.5}
+- **Détails** : {'mae_pipeline_differencie': 9.073, 'mae_pire_modele_isole': 21.312, 'gain_relatif_pct': 57.4}
 
 ### H2 — Complémentarité statistique ↔ apprentissage
 
@@ -47,19 +47,19 @@ Ce rapport synthétise la validation des six hypothèses de recherche
 
 - **Test** : Coût total simulé LP vs politique empirique
 - **Critère** : coût LP < coût empirique
-- **Valeur mesurée** : 0.717
+- **Valeur mesurée** : 0.703
 - **Seuil** : 1.0
 - **Verdict** : **Validée**
-- **Détails** : {'cout_lp_usd': 55029.07, 'cout_emp_usd': 76740.36, 'gain_usd': 21711.29, 'gain_pct': 28.29}
+- **Détails** : {'cout_lp_usd': 54143.71, 'cout_emp_usd': 76979.92, 'gain_usd': 22836.21, 'gain_pct': 29.67}
 
 ### H5 — Impact financier mesurable
 
 - **Test** : Bénéfice net additionnel = ΔCA + Δmarge_évitée + Δstock×coût_capital
 - **Critère** : bénéfice > 0
-- **Valeur mesurée** : 5258.862
+- **Valeur mesurée** : 5392.082
 - **Seuil** : 0.0
 - **Verdict** : **Validée**
-- **Détails** : {'delta_ca_realise_usd': 4279.66, 'delta_marge_perdue_evitee_usd': 911.28, 'delta_stock_libere_usd': 566.02, 'coupon_capital_libere_usd': 67.92, 'benefice_net_usd': 5258.86}
+- **Détails** : {'delta_ca_realise_usd': 4398.31, 'delta_marge_perdue_evitee_usd': 920.12, 'delta_stock_libere_usd': 613.77, 'coupon_capital_libere_usd': 73.65, 'benefice_net_usd': 5392.08}
 
 ### H6 — Faisabilité PME (frugalité)
 
@@ -68,7 +68,7 @@ Ce rapport synthétise la validation des six hypothèses de recherche
 - **Valeur mesurée** : 3.0
 - **Seuil** : 3.0
 - **Verdict** : **Validée**
-- **Détails** : {'temps_total_sec': 213, 'limite_temps_sec': 300.0, 'n_dependances_python': 17, 'limite_dependances': 20, 'necessite_gpu': False}
+- **Détails** : {'temps_total_sec': 213, 'limite_temps_sec': 300.0, 'n_dependances_python': 20, 'limite_dependances': 20, 'necessite_gpu': False}
 
 ## Temps total de l'exécution complète
 

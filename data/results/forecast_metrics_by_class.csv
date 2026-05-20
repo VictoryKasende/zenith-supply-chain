@@ -1,9 +1,0 @@
-classe_abc,modele,n_produits,mae_moy,rmse_moy,mape_moy
-A,croston,2,12.819,13.886,332.365
-A,lstm,48,7.234,8.378,126.464
-A,obsolete,19,,,
-B,lightgbm,39,7.754,9.143,75.447
-B,obsolete,20,,,
-C,croston,7,4.368,5.248,165.716
-C,obsolete,34,,,
-C,sarima,81,15.725,18.594,116.956

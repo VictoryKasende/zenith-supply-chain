@@ -10,5 +10,7 @@ __pycache__/
 data/processed/*.parquet
 data/results/cluster_profile.csv
 
+
 # Logs
 *.log
+
