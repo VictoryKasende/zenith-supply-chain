@@ -1,0 +1,251 @@
+produit_id,produit_nom,famille,marque,origine_fournisseur,cout_achat_unitaire,prix_vente_unitaire,marge_theorique
+P0001,Cartouche HP 107A,Cartouche,HP,Dubaï,95.0,133.0,0.4
+P0002,Cartouche HP 107W,Cartouche,HP,Dubaï,110.0,154.0,0.4
+P0003,Cartouche HP 119A,Cartouche,HP,Dubaï,90.0,126.0,0.4
+P0004,Cartouche HP 135A,Cartouche,HP,Dubaï,120.0,168.0,0.4
+P0005,Cartouche HP 135W,Cartouche,HP,Dubaï,130.0,182.0,0.4
+P0006,Cartouche HP 151A,Cartouche,HP,Dubaï,145.0,203.0,0.4
+P0007,Cartouche HP 206A Noir,Cartouche,HP,Dubaï,165.0,231.0,0.4
+P0008,Cartouche HP 206A Cyan,Cartouche,HP,Dubaï,175.0,245.0,0.4
+P0009,Cartouche HP 206A Magenta,Cartouche,HP,Dubaï,175.0,245.0,0.4
+P0010,Cartouche HP 206A Yellow,Cartouche,HP,Dubaï,175.0,245.0,0.4
+P0011,Cartouche HP 207A Noir,Cartouche,HP,Dubaï,170.0,238.0,0.4
+P0012,Cartouche HP 207A Cyan,Cartouche,HP,Dubaï,180.0,252.0,0.4
+P0013,Cartouche HP 207A Magenta,Cartouche,HP,Dubaï,180.0,252.0,0.4
+P0014,Cartouche HP 207A Yellow,Cartouche,HP,Dubaï,180.0,252.0,0.4
+P0015,Cartouche HP 410A Noir,Cartouche,HP,Dubaï,210.0,294.0,0.4
+P0016,Cartouche HP 410A Cyan,Cartouche,HP,Dubaï,220.0,308.0,0.4
+P0017,Cartouche HP 410A Magenta,Cartouche,HP,Dubaï,220.0,308.0,0.4
+P0018,Cartouche HP 410A Yellow,Cartouche,HP,Dubaï,220.0,308.0,0.4
+P0019,Cartouche HP 413A Magenta,Cartouche,HP,Dubaï,235.0,329.0,0.4
+P0020,Cartouche HP 415A Noir,Cartouche,HP,Dubaï,240.0,336.0,0.4
+P0021,Cartouche HP 415A Cyan,Cartouche,HP,Dubaï,250.0,350.0,0.4
+P0022,Cartouche HP 415A Magenta,Cartouche,HP,Dubaï,250.0,350.0,0.4
+P0023,Cartouche HP 415A Yellow,Cartouche,HP,Dubaï,250.0,350.0,0.4
+P0024,Cartouche HP 508A Noir,Cartouche,HP,Dubaï,260.0,364.0,0.4
+P0025,Cartouche HP 508A Cyan,Cartouche,HP,Dubaï,270.0,378.0,0.4
+P0026,Cartouche HP 827A Cyan,Cartouche,HP,Dubaï,275.0,385.0,0.4
+P0027,Cartouche HP 963 Couleur,Cartouche,HP,Dubaï,95.0,133.0,0.4
+P0028,Cartouche HP 222A,Cartouche,HP,Dubaï,105.0,147.0,0.4
+P0029,Cartouche HP 59,Cartouche,HP,Dubaï,80.0,112.0,0.4
+P0030,Cartouche Canon 055,Cartouche,Canon,Dubaï,130.0,182.0,0.4
+P0031,Cartouche Canon 071,Cartouche,Canon,Dubaï,120.0,168.0,0.4
+P0032,Cartouche Canon 137,Cartouche,Canon,Dubaï,140.0,196.0,0.4
+P0134,Clavier HP filaire,Accessoire,HP,Chine,14.0,21.0,0.5
+P0135,Clavier Dell filaire,Accessoire,Dell,Chine,13.0,19.5,0.5
+P0136,Clavier Logitech K120,Accessoire,Logitech,Chine,12.0,18.0,0.5
+P0137,Clavier sans fil Logitech MK270,Accessoire,Logitech,Chine,26.0,39.0,0.5
+P0138,Clavier pliable Bluetooth,Accessoire,Generic,Chine,22.0,33.0,0.5
+P0139,Souris HP filaire,Accessoire,HP,Chine,7.0,10.5,0.5
+P0140,Souris Dell filaire,Accessoire,Dell,Chine,6.0,9.0,0.5
+P0141,Souris sans fil Logitech M185,Accessoire,Logitech,Chine,11.0,16.5,0.5
+P0142,Souris gaming RGB,Accessoire,Generic,Chine,15.0,22.5,0.5
+P0143,Tapis de souris,Accessoire,Generic,Chine,3.0,4.5,0.5
+P0144,Chargeur Laptop universel 65W,Accessoire,Generic,Chine,24.0,36.0,0.5
+P0145,Chargeur Laptop USB-C 65W,Accessoire,Generic,Chine,28.0,42.0,0.5
+P0146,Chargeur Laptop HP 65W original,Accessoire,HP,Dubaï,38.0,57.0,0.5
+P0147,Chargeur Laptop Dell 65W original,Accessoire,Dell,Dubaï,38.0,57.0,0.5
+P0148,Sacoche Laptop 15.6 pouces,Accessoire,Generic,Chine,14.0,21.0,0.5
+P0149,Sacoche Laptop HP 15.6,Accessoire,HP,Chine,22.0,33.0,0.5
+P0150,Support Laptop refroidisseur,Accessoire,Generic,Chine,18.0,27.0,0.5
+P0151,Casque audio filaire,Accessoire,Generic,Chine,9.0,13.5,0.5
+P0152,Casque Bluetooth,Accessoire,Generic,Chine,18.0,27.0,0.5
+P0153,Ecouteurs Stereo,Accessoire,Generic,Chine,5.0,7.5,0.5
+P0154,JBL Boomer Bluetooth,Accessoire,JBL,Dubaï,104.0,156.0,0.5
+P0155,Speaker Bluetooth portable,Accessoire,Generic,Chine,22.0,33.0,0.5
+P0156,Webcam HD 720p,Accessoire,Generic,Chine,18.0,27.0,0.5
+P0157,Webcam HP 320 FHD,Accessoire,HP,Dubaï,38.0,57.0,0.5
+P0158,Webcam Logitech C270 HD,Accessoire,Logitech,Dubaï,32.0,48.0,0.5
+P0159,Micro USB Studio,Accessoire,Generic,Chine,28.0,42.0,0.5
+P0160,Hub USB 3.0 4 ports,Accessoire,Generic,Chine,8.0,12.0,0.5
+P0161,Hub USB Card Reader,Accessoire,Generic,Chine,9.0,13.5,0.5
+P0162,Convertisseur HDMI vers AV,Accessoire,Generic,Chine,7.0,10.5,0.5
+P0163,Convertisseur AV vers HDMI,Accessoire,Generic,Chine,8.0,12.0,0.5
+P0036,Imprimante HP 4120,Imprimante,HP,Dubaï,132.0,158.4,0.2
+P0037,Imprimante HP LaserJet MFP 183fw,Imprimante,HP,Dubaï,600.0,720.0,0.2
+P0038,Imprimante HP LaserJet M 283Fdw,Imprimante,HP,Dubaï,680.0,816.0,0.2
+P0039,Imprimante HP LaserJet 107A,Imprimante,HP,Dubaï,184.0,220.8,0.2
+P0040,Imprimante HP LaserJet 107W,Imprimante,HP,Dubaï,224.0,268.8,0.2
+P0041,Imprimante HP LaserJet 135A,Imprimante,HP,Dubaï,280.0,336.0,0.2
+P0042,Imprimante HP LaserJet 135W,Imprimante,HP,Dubaï,320.0,384.0,0.2
+P0043,Imprimante HP LaserJet M 428Fdw,Imprimante,HP,Dubaï,544.0,652.8,0.2
+P0044,Imprimante HP Pro 7740,Imprimante,HP,Dubaï,416.0,499.2,0.2
+P0045,Imprimante HP Pro 7720,Imprimante,HP,Dubaï,388.0,465.6,0.2
+P0046,Imprimante HP 415,Imprimante,HP,Dubaï,288.0,345.6,0.2
+P0047,Imprimante HP DeskJet Plus 4120,Imprimante,HP,Dubaï,132.0,158.4,0.2
+P0048,Imprimante HP 3790,Imprimante,HP,Dubaï,96.0,115.2,0.2
+P0049,Imprimante HP DeskJet 2320,Imprimante,HP,Dubaï,72.0,86.4,0.2
+P0050,Imprimante HP DeskJet 2710,Imprimante,HP,Dubaï,84.0,100.8,0.2
+P0051,Imprimante HP MFP M 479fdw,Imprimante,HP,Dubaï,720.0,864.0,0.2
+P0052,Imprimante HP Color LaserJet Pro M183fw,Imprimante,HP,Dubaï,552.0,662.4,0.2
+P0053,Imprimante HP LaserJet Pro MFP 3303fdw,Imprimante,HP,Dubaï,592.0,710.4,0.2
+P0054,Imprimante Canon MF3010,Imprimante,Canon,Dubaï,320.0,384.0,0.2
+P0055,Imprimante Canon MF 112,Imprimante,Canon,Dubaï,304.0,364.8,0.2
+P0056,Imprimante Canon G3415,Imprimante,Canon,Dubaï,280.0,336.0,0.2
+P0057,Imprimante Canon G3410,Imprimante,Canon,Dubaï,224.0,268.8,0.2
+P0058,Imprimante Canon G2470,Imprimante,Canon,Dubaï,280.0,336.0,0.2
+P0059,Imprimante Canon MG2540,Imprimante,Canon,Dubaï,72.0,86.4,0.2
+P0060,Imprimante Canon 3326i,Imprimante,Canon,Dubaï,420.0,504.0,0.2
+P0061,Imprimante Epson L3150,Imprimante,Epson,Dubaï,280.0,336.0,0.2
+P0062,Imprimante Epson L805,Imprimante,Epson,Dubaï,360.0,432.0,0.2
+P0094,Routeur TP Link 28 ports,Reseau,TP-Link,Chine,245.0,318.5,0.3
+P0095,Routeur TP Link AC 1350 Archer C60,Reseau,TP-Link,Chine,75.0,97.5,0.3
+P0096,Router Pro 3 D-Link,Reseau,D-Link,Chine,98.0,127.4,0.3
+P0097,TP Link Switch 8 ports,Reseau,TP-Link,Chine,69.0,89.7,0.3
+P0098,TP Link Switch 16 ports,Reseau,TP-Link,Chine,192.0,249.6,0.3
+P0099,TP Link Switch 6 ports,Reseau,TP-Link,Chine,57.0,74.1,0.3
+P0100,TP Link Adapter PoE,Reseau,TP-Link,Chine,31.0,40.3,0.3
+P0101,D-Link Mobile Router,Reseau,D-Link,Chine,100.0,130.0,0.3
+P0102,D-Link Wireless N300,Reseau,D-Link,Chine,65.0,84.5,0.3
+P0103,USB WiFi TP Link TL-WN823N,Reseau,TP-Link,Chine,15.0,19.5,0.3
+P0104,Switch Cisco 16 ports,Reseau,Cisco,Dubaï,320.0,416.0,0.3
+P0105,Switch Cisco 24 ports,Reseau,Cisco,Dubaï,480.0,624.0,0.3
+P0106,Switch Hikvision 4 ports PoE,Reseau,Hikvision,Chine,85.0,110.5,0.3
+P0107,Switch 16 port PoE Hikvision,Reseau,Hikvision,Chine,215.0,279.5,0.3
+P0108,Nano Station M2 Ubiquity,Reseau,Ubiquiti,Chine,108.0,140.4,0.3
+P0109,Nano Station 5GHz Ubiquity,Reseau,Ubiquiti,Chine,135.0,175.5,0.3
+P0110,Starlink Standard,Reseau,SpaceX,Dubaï,461.0,599.3,0.3
+P0111,Antenne WiFi Long Range,Reseau,Generic,Chine,45.0,58.5,0.3
+P0112,Access Point Wireless TP-Link,Reseau,TP-Link,Chine,88.0,114.4,0.3
+P0113,Patch Panel Rack 24 ports,Reseau,Generic,Chine,75.0,97.5,0.3
+P0114,Patch Panel Rack 48 ports,Reseau,Generic,Chine,135.0,175.5,0.3
+P0115,Telephone Fixe WiFi IP,Reseau,Generic,Chine,200.0,260.0,0.3
+P0066,Desktop HP 290G4 i3 8Gb 1To,Ordinateur,HP,Dubaï,552.0,634.8,0.15
+P0067,Desktop HP 290G4 i5 8Gb 1To,Ordinateur,HP,Dubaï,722.0,830.3,0.15
+P0068,Desktop HP 290G4 i7 8Gb 1To,Ordinateur,HP,Dubaï,833.0,957.95,0.15
+P0069,Desktop HP 290G4 i5 16Gb 512SSD,Ordinateur,HP,Dubaï,850.0,977.5,0.15
+P0070,Desktop Dell 3080 i3 8Gb 1To,Ordinateur,Dell,Dubaï,569.0,654.35,0.15
+P0071,Desktop Dell 3080 i5 8Gb 1To,Ordinateur,Dell,Dubaï,637.0,732.55,0.15
+P0072,Desktop Dell 3080 i7 8Gb 1To,Ordinateur,Dell,Dubaï,790.0,908.5,0.15
+P0073,Desktop Dell Optiplex 7090 i7,Ordinateur,Dell,Dubaï,980.0,1127.0,0.15
+P0074,Laptop HP ProBook 450 G8 i7 16Gb 512SSD,Ordinateur,HP,Dubaï,1190.0,1368.5,0.15
+P0075,Laptop HP ProBook 440 G8 i5 8Gb 256SSD,Ordinateur,HP,Dubaï,850.0,977.5,0.15
+P0076,Laptop HP 250 G8 i3 8Gb 1To,Ordinateur,HP,Dubaï,595.0,684.25,0.15
+P0077,Laptop Dell Latitude 3520 i7 16Gb 512SSD,Ordinateur,Dell,Dubaï,1275.0,1466.25,0.15
+P0078,Laptop Dell Latitude 3520 i5 8Gb 256SSD,Ordinateur,Dell,Dubaï,935.0,1075.25,0.15
+P0079,Laptop Dell Vostro 3500 i5 8Gb 1To,Ordinateur,Dell,Dubaï,765.0,879.75,0.15
+P0080,Laptop Dell Inspiron 15 i7 16Gb 512SSD,Ordinateur,Dell,Dubaï,1105.0,1270.75,0.15
+P0081,Laptop Lenovo ThinkPad E15 i5,Ordinateur,Lenovo,Dubaï,935.0,1075.25,0.15
+P0082,Laptop Lenovo IdeaPad 3 i3 8Gb,Ordinateur,Lenovo,Dubaï,510.0,586.5,0.15
+P0083,Laptop Asus Vivobook i5 8Gb 512SSD,Ordinateur,Asus,Dubaï,765.0,879.75,0.15
+P0196,Papier Duplicateur Type K A4 (rame),Papeterie,TypeK,Dubaï,4.2,5.88,0.4
+P0197,Papier Duplicateur A3 (rame),Papeterie,Chamex,Dubaï,8.5,11.9,0.4
+P0198,Papier Duplicateur Eclipse A4 (rame),Papeterie,Eclipse,Dubaï,3.8,5.32,0.4
+P0199,Papier Photo A4 (paquet 20),Papeterie,Generic,Chine,4.5,6.3,0.4
+P0200,Encre Correcteur,Papeterie,Generic,Chine,1.5,2.1,0.4
+P0201,Marker Whiteboard (boîte 12),Papeterie,Generic,Chine,9.0,12.6,0.4
+P0202,Stylo Bille bleu (boîte 50),Papeterie,Bic,Chine,4.5,6.3,0.4
+P0203,Agrafeuse DS 45,Papeterie,Generic,Chine,7.0,9.8,0.4
+P0204,Agrafes boîte 1000,Papeterie,Generic,Chine,1.5,2.1,0.4
+P0205,Cutter B3,Papeterie,Generic,Chine,1.5,2.1,0.4
+P0206,Cutter B4,Papeterie,Generic,Chine,2.0,2.8,0.4
+P0207,Cahier Registre 300 pages,Papeterie,Generic,Chine,6.0,8.4,0.4
+P0208,Farde à suspension (boîte 25),Papeterie,Alba,Chine,14.0,19.6,0.4
+P0209,Farde Chemise A4 (paquet 100),Papeterie,Generic,Chine,7.5,10.5,0.4
+P0210,Enveloppe A4 (paquet 50),Papeterie,Generic,Chine,4.0,5.6,0.4
+P0211,Enveloppe Par Avion (paquet 25),Papeterie,Generic,Chine,3.0,4.2,0.4
+P0212,Laminateur A3 Métalic,Papeterie,Generic,Chine,110.0,154.0,0.4
+P0213,Laminateur A4 Plastic,Papeterie,Generic,Chine,50.0,70.0,0.4
+P0119,Cable SFTP CAT 6 (mètre),Cable,Generic,Chine,1.2,1.62,0.35
+P0120,Cable Coaxial (mètre),Cable,Generic,Chine,1.0,1.35,0.35
+P0121,Cable HDMI 1.5m,Cable,Generic,Chine,4.5,6.08,0.35
+P0122,Cable HDMI 3m,Cable,Generic,Chine,7.5,10.12,0.35
+P0123,Cable HDMI 5m,Cable,Generic,Chine,11.0,14.85,0.35
+P0124,Cable USB 3.0,Cable,Generic,Chine,3.5,4.73,0.35
+P0125,Cable USB Type-C,Cable,Generic,Chine,5.0,6.75,0.35
+P0126,Cable VGA 1.5m,Cable,Generic,Chine,3.5,4.73,0.35
+P0127,Cable Ethernet 5m RJ45,Cable,Generic,Chine,4.0,5.4,0.35
+P0128,Cable Ethernet 10m RJ45,Cable,Generic,Chine,7.0,9.45,0.35
+P0129,Connecteur RJ45 blindé,Cable,Generic,Chine,0.45,0.61,0.35
+P0130,Cable Imprimante USB B,Cable,Generic,Chine,3.5,4.73,0.35
+P0131,Cable Audio Jack 3.5mm,Cable,Generic,Chine,3.0,4.05,0.35
+P0132,Cable Power IEC,Cable,Generic,Chine,4.5,6.08,0.35
+P0169,Clé USB 8 Go,Stockage,Generic,Chine,4.0,5.4,0.35
+P0170,Clé USB 16 Go,Stockage,Generic,Chine,6.0,8.1,0.35
+P0171,Clé USB 32 Go,Stockage,SanDisk,Chine,9.0,12.15,0.35
+P0172,Clé USB 64 Go,Stockage,SanDisk,Chine,13.0,17.55,0.35
+P0173,Clé USB 128 Go,Stockage,SanDisk,Chine,22.0,29.7,0.35
+P0174,Carte mémoire SD 32 Go,Stockage,SanDisk,Chine,11.0,14.85,0.35
+P0175,Carte mémoire SD 64 Go,Stockage,SanDisk,Chine,18.0,24.3,0.35
+P0176,Carte mémoire Micro SD 128 Go,Stockage,SanDisk,Chine,26.0,35.1,0.35
+P0177,Disque dur externe 1 To Seagate,Stockage,Seagate,Dubaï,56.0,75.6,0.35
+P0178,Disque dur externe 2 To Seagate,Stockage,Seagate,Dubaï,82.0,110.7,0.35
+P0179,Disque dur externe 1 To WD,Stockage,WD,Dubaï,58.0,78.3,0.35
+P0180,SSD 240 Go Kingston,Stockage,Kingston,Dubaï,32.0,43.2,0.35
+P0181,SSD 480 Go Kingston,Stockage,Kingston,Dubaï,48.0,64.8,0.35
+P0184,Onduleur 650 VA APC,Onduleur,APC,Dubaï,96.0,120.0,0.25
+P0185,Onduleur 725 VA APC,Onduleur,APC,Dubaï,112.0,140.0,0.25
+P0186,Onduleur 1050 VA APC,Onduleur,APC,Dubaï,152.0,190.0,0.25
+P0187,Onduleur 1250 VA APC,Onduleur,APC,Dubaï,184.0,230.0,0.25
+P0188,Onduleur 1500 VA APC,Onduleur,APC,Dubaï,216.0,270.0,0.25
+P0189,Onduleur 1550 VA Mercury,Onduleur,Mercury,Chine,144.0,180.0,0.25
+P0190,Onduleur 2000 VA APC,Onduleur,APC,Dubaï,280.0,350.0,0.25
+P0191,Onduleur 2000 VA Mercury,Onduleur,Mercury,Chine,200.0,250.0,0.25
+P0192,Onduleur 3000 VA APC,Onduleur,APC,Dubaï,400.0,500.0,0.25
+P0193,Stabilisateur 1000 VA,Onduleur,Generic,Chine,60.0,75.0,0.25
+P0194,Stabilisateur 1500 VA,Onduleur,Generic,Chine,88.0,110.0,0.25
+P0216,Téléphone Itel Vision 3,Telephone,Itel,Chine,82.0,94.3,0.15
+P0217,Téléphone Itel A56,Telephone,Itel,Chine,55.0,63.25,0.15
+P0218,Téléphone Itel P40,Telephone,Itel,Chine,95.0,109.25,0.15
+P0219,Téléphone Tecno Camon 30,Telephone,Tecno,Chine,165.0,189.75,0.15
+P0220,Téléphone Tecno Spark 10,Telephone,Tecno,Chine,130.0,149.5,0.15
+P0221,Téléphone Samsung Galaxy A14,Telephone,Samsung,Dubaï,165.0,189.75,0.15
+P0222,Téléphone Samsung Galaxy A24,Telephone,Samsung,Dubaï,210.0,241.5,0.15
+P0223,Téléphone Samsung Fold 5,Telephone,Samsung,Dubaï,1235.0,1420.25,0.15
+P0224,Téléphone Infinix Hot 30,Telephone,Infinix,Chine,130.0,149.5,0.15
+P0225,Téléphone Nokia 105,Telephone,Nokia,Dubaï,26.0,29.9,0.15
+P0226,Téléphone Nokia 8210 4G,Telephone,Nokia,Dubaï,65.0,74.75,0.15
+P0236,Pile Duracell AA (paquet 4),Batterie,Duracell,Dubaï,2.0,3.0,0.5
+P0237,Pile Duracell AAA (paquet 4),Batterie,Duracell,Dubaï,1.8,2.7,0.5
+P0238,Pile GP 23A,Batterie,GP,Chine,0.8,1.2,0.5
+P0239,Pile CMOS CR2032,Batterie,Generic,Chine,0.5,0.75,0.5
+P0240,Pile Sony 9V,Batterie,Sony,Dubaï,1.5,2.25,0.5
+P0241,Batterie Onduleur 12V 7A,Batterie,Generic,Chine,16.0,24.0,0.5
+P0242,Batterie Onduleur 12V 9A,Batterie,Generic,Chine,22.0,33.0,0.5
+P0243,Pile rechargeable Sony AA Kit,Batterie,Sony,Dubaï,10.0,15.0,0.5
+P0244,Pile rechargeable Sony AAA Kit,Batterie,Sony,Dubaï,9.0,13.5,0.5
+P0086,Moniteur 24 pouces Slim,Moniteur,Generic,Chine,200.0,240.0,0.2
+P0087,Moniteur 27 pouces Slim,Moniteur,Generic,Chine,304.0,364.8,0.2
+P0088,Moniteur 32 pouces Slim,Moniteur,Generic,Chine,464.0,556.8,0.2
+P0089,Moniteur HP 27 pouces FHD,Moniteur,HP,Dubaï,360.0,432.0,0.2
+P0090,Moniteur Dell 24 pouces,Moniteur,Dell,Dubaï,280.0,336.0,0.2
+P0091,Ecran Projecteur Acer,Moniteur,Acer,Chine,416.0,499.2,0.2
+P0092,Television 43 pouces LG,Moniteur,LG,Dubaï,480.0,576.0,0.2
+P0228,Caméra Hikvision Dôme 2MP,Camera,Hikvision,Chine,65.0,84.5,0.3
+P0229,Caméra Hikvision Bullet 4MP,Camera,Hikvision,Chine,90.0,117.0,0.3
+P0230,Caméra Hikvision PTZ 5MP,Camera,Hikvision,Chine,270.0,351.0,0.3
+P0231,DVR Hikvision 8 canaux,Camera,Hikvision,Chine,165.0,214.5,0.3
+P0232,DVR Hikvision 16 canaux,Camera,Hikvision,Chine,280.0,364.0,0.3
+P0233,NVR Hikvision 4 canaux,Camera,Hikvision,Chine,100.0,130.0,0.3
+P0234,Caméra Dahua Bullet,Camera,Dahua,Chine,70.0,91.0,0.3
+P0246,PlayStation 2 (occasion),Gaming,Sony,Dubaï,104.0,124.8,0.2
+P0247,PlayStation 3 (occasion),Gaming,Sony,Dubaï,240.0,288.0,0.2
+P0248,PlayStation 4 (occasion),Gaming,Sony,Dubaï,360.0,432.0,0.2
+P0249,Manette PlayStation 5,Gaming,Sony,Dubaï,56.0,67.2,0.2
+P0250,Carte mémoire PS2,Gaming,Sony,Dubaï,12.0,14.4,0.2
+P0251,Table Bureau GF,Mobilier,Generic,Chine,154.0,200.2,0.3
+P0252,Chaise Bureau GF,Mobilier,Generic,Chine,92.0,119.6,0.3
+P0253,Chaise Bureau PF,Mobilier,Generic,Chine,62.0,80.6,0.3
+P0254,Coffre-fort électronique,Mobilier,Generic,Chine,169.0,219.7,0.3
+P0255,Armoire métallique,Mobilier,Generic,Chine,246.0,319.8,0.3
+P0266,Mémoire RAM Desktop DDR4 8 Go,Composant,Kingston,Dubaï,32.0,41.6,0.3
+P0267,Mémoire RAM Desktop DDR4 16 Go,Composant,Kingston,Dubaï,58.0,75.4,0.3
+P0268,Mémoire RAM Laptop DDR4 8 Go,Composant,Kingston,Dubaï,35.0,45.5,0.3
+P0269,Mémoire RAM Laptop DDR4 16 Go,Composant,Kingston,Dubaï,62.0,80.6,0.3
+P0270,Mémoire RAM DDR5 16 Go,Composant,Kingston,Dubaï,90.0,117.0,0.3
+P0271,Jeu d'encre Epson 003 Noir,JeuEncre,Epson,Dubaï,9.0,12.6,0.4
+P0272,Jeu d'encre Epson 003 Couleur,JeuEncre,Epson,Dubaï,11.0,15.4,0.4
+P0273,Jeu d'encre Epson 664 Quadri,JeuEncre,Epson,Dubaï,25.0,35.0,0.4
+P0274,Jeu d'encre Epson 108 Noir,JeuEncre,Epson,Dubaï,13.0,18.2,0.4
+P0275,Jeu d'encre Epson 102 EcoTank,JeuEncre,Epson,Dubaï,27.0,37.8,0.4
+P0276,Machine à compter les espèces,Divers,Generic,Chine,200.0,260.0,0.3
+P0277,Calculatrice scientifique Casio,Divers,Casio,Chine,16.0,20.8,0.3
+P0278,Calculatrice de bureau 12 digits,Divers,Casio,Chine,12.0,15.6,0.3
+P0279,Antivirus Kaspersky 1 an,Divers,Kaspersky,Dubaï,22.0,28.6,0.3
+P0256,Panneau Solaire 100W,Solaire,Generic,Chine,64.0,80.0,0.25
+P0257,Panneau Solaire 150W,Solaire,Generic,Chine,96.0,120.0,0.25
+P0258,Panneau Solaire 200W,Solaire,Generic,Chine,128.0,160.0,0.25
+P0259,Batterie panneau solaire 100Ah,Solaire,Generic,Chine,152.0,190.0,0.25
+P0260,Rack 9U,Rack,Generic,Chine,192.0,249.6,0.3
+P0261,Rack 12U,Rack,Generic,Chine,270.0,351.0,0.3
+P0262,Rack 22U,Rack,Generic,Chine,415.0,539.5,0.3

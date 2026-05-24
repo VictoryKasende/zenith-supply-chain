@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Données binaires lourdes & artefacts générés
+data/processed/*.parquet
+data/results/cluster_profile.csv
+
+
+# Logs
+*.log
+

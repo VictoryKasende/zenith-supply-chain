@@ -1,0 +1,15 @@
+etape,lignes,colonnes,dates_nat,doublons_supprimes,libelles_corriges,prix_aberrants_x10_corriges,prix_aberrants_imputes_mediane,retours_isoles,lignes_imputees,valeurs_imputees,lignes_supprimees,lignes_corrigees
+00_donnees_brutes,68258,18,,,,,,,,,,
+01_dates_iso,68258,18,0.0,,,,,,,,,
+02_doublons_supprimes,67586,18,,672.0,,,,,,,,
+03_famille_normalisee,67586,18,,,66.0,,,,,,,
+04_imputation_catalogue,67586,18,,,,,,,,,,
+05_prix_aberrants_corriges,67586,18,,,,2276.0,1033.0,,,,,
+06_retours_isoles,67250,19,,,,,,336.0,,,,
+07_cout_impute_marge_famille,67250,19,,,,,,,0.0,,,
+08_marque_imputee_modale,67250,19,,,,,,,0.0,,,
+09_mode_paiement_par_type_client,67250,19,,,,,,,1680.0,,,
+10_client_nom_anonyme,67250,19,,,,,,,2531.0,,,
+11_stock_interpole,67250,19,,,,,,,,673.0,,
+12_lignes_vides_supprimees,67250,19,,,,,,,,,0.0,
+13_montant_recalcule,67250,19,,,,,,,,,,337.0

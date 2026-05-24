@@ -1,0 +1,251 @@
+produit_id,produit_nom,famille,marque,origine_fournisseur,cout_achat_unitaire,prix_vente_unitaire,marge_theorique,classe_abc,classe_xyz,classe_abc_xyz,cluster_kmeans,libelle_cluster,ca_total_36mois,ventes_totales_36mois,coefficient_variation,jours_depuis_derniere_vente,nombre_mois_consecutifs_sans_vente,valeur_stock_dormant,a_risque_obsolescence,statut
+P0001,Cartouche HP 107A,Cartouche,HP,Dubaï,95.0,133.0,0.4,A,Y,AY,2,Bestseller stable,80983.0,608.0,0.542772876707245,486,15,0.0,1,À risque
+P0002,Cartouche HP 107W,Cartouche,HP,Dubaï,110.0,154.0,0.4,A,Y,AY,2,Bestseller stable,170170.0,1105.0,0.5872824534396361,44,1,110.0,1,À risque
+P0003,Cartouche HP 119A,Cartouche,HP,Dubaï,90.0,126.0,0.4,C,Z,CZ,0,Dormant — risque obsolescence,20286.0,161.0,1.2056155017619874,909,29,0.0,1,À risque
+P0004,Cartouche HP 135A,Cartouche,HP,Dubaï,120.0,168.0,0.4,A,Y,AY,2,Bestseller stable,123480.0,735.0,0.7904022553066683,233,7,0.0,1,À risque
+P0005,Cartouche HP 135W,Cartouche,HP,Dubaï,130.0,182.0,0.4,A,Y,AY,2,Bestseller stable,81536.0,448.0,0.7870337086784567,9,0,3510.0,0,Actif
+P0006,Cartouche HP 151A,Cartouche,HP,Dubaï,145.0,203.0,0.4,B,Y,BY,2,Bestseller stable,69426.0,342.0,0.8217500446161284,3,0,2175.0,0,Actif
+P0007,Cartouche HP 206A Noir,Cartouche,HP,Dubaï,165.0,231.0,0.4,B,Z,BZ,0,Dormant — risque obsolescence,40425.0,175.0,1.0039920318408906,888,29,0.0,1,À risque
+P0008,Cartouche HP 206A Cyan,Cartouche,HP,Dubaï,175.0,245.0,0.4,A,Y,AY,2,Bestseller stable,118825.0,485.0,0.8855925307531914,5,0,2275.0,1,À risque
+P0009,Cartouche HP 206A Magenta,Cartouche,HP,Dubaï,175.0,245.0,0.4,B,Z,BZ,0,Dormant — risque obsolescence,36750.0,150.0,1.3295111883696202,765,25,1400.0,1,À risque
+P0010,Cartouche HP 206A Yellow,Cartouche,HP,Dubaï,175.0,245.0,0.4,B,Y,BY,0,Dormant — risque obsolescence,31850.0,130.0,0.6091996884068717,1045,34,0.0,1,À risque
+P0011,Cartouche HP 207A Noir,Cartouche,HP,Dubaï,170.0,238.0,0.4,A,Z,AZ,2,Bestseller stable,94010.0,395.0,1.0539155948264949,351,11,0.0,1,À risque
+P0012,Cartouche HP 207A Cyan,Cartouche,HP,Dubaï,180.0,252.0,0.4,A,Y,AY,0,Dormant — risque obsolescence,119196.0,473.0,0.7167040615248481,679,22,180.0,1,À risque
+P0013,Cartouche HP 207A Magenta,Cartouche,HP,Dubaï,180.0,252.0,0.4,A,Y,AY,0,Dormant — risque obsolescence,122220.0,485.0,0.6649889640882141,685,22,2520.0,1,À risque
+P0014,Cartouche HP 207A Yellow,Cartouche,HP,Dubaï,180.0,252.0,0.4,A,Y,AY,2,Bestseller stable,200340.0,795.0,0.5640677308840364,1,0,4320.0,0,Actif
+P0015,Cartouche HP 410A Noir,Cartouche,HP,Dubaï,210.0,294.0,0.4,A,Z,AZ,2,Bestseller stable,133182.0,453.0,1.2422087867690703,28,0,2730.0,0,Actif
+P0016,Cartouche HP 410A Cyan,Cartouche,HP,Dubaï,220.0,308.0,0.4,A,Y,AY,2,Bestseller stable,174328.0,566.0,0.5161821051756245,0,0,8140.0,0,Actif
+P0017,Cartouche HP 410A Magenta,Cartouche,HP,Dubaï,220.0,308.0,0.4,A,Y,AY,2,Bestseller stable,222992.0,724.0,0.8027953208747164,306,10,0.0,1,À risque
+P0018,Cartouche HP 410A Yellow,Cartouche,HP,Dubaï,220.0,308.0,0.4,B,X,BX,0,Dormant — risque obsolescence,36344.0,118.0,0.0479394427923083,1041,34,0.0,1,À risque
+P0019,Cartouche HP 413A Magenta,Cartouche,HP,Dubaï,235.0,329.0,0.4,B,Z,BZ,0,Dormant — risque obsolescence,77315.0,235.0,1.5320567310224102,211,6,0.0,1,À risque
+P0020,Cartouche HP 415A Noir,Cartouche,HP,Dubaï,240.0,336.0,0.4,A,Y,AY,2,Bestseller stable,257712.0,767.0,0.5928351687375211,348,11,0.0,1,À risque
+P0021,Cartouche HP 415A Cyan,Cartouche,HP,Dubaï,250.0,350.0,0.4,A,Y,AY,2,Bestseller stable,400400.0,1144.0,0.6278453044799798,1,0,2750.0,1,À risque
+P0022,Cartouche HP 415A Magenta,Cartouche,HP,Dubaï,250.0,350.0,0.4,A,Y,AY,2,Bestseller stable,114800.0,328.0,0.9314045181140552,23,0,11250.0,1,À risque
+P0023,Cartouche HP 415A Yellow,Cartouche,HP,Dubaï,250.0,350.0,0.4,A,Y,AY,2,Bestseller stable,420700.0,1202.0,0.531212917478812,0,0,6500.0,0,Actif
+P0024,Cartouche HP 508A Noir,Cartouche,HP,Dubaï,260.0,364.0,0.4,A,Y,AY,2,Bestseller stable,419328.0,1152.0,0.6415226724642819,1,0,7540.0,0,Actif
+P0025,Cartouche HP 508A Cyan,Cartouche,HP,Dubaï,270.0,378.0,0.4,A,Y,AY,2,Bestseller stable,314496.0,832.0,0.7368220508145199,0,0,2970.0,0,Actif
+P0026,Cartouche HP 827A Cyan,Cartouche,HP,Dubaï,275.0,385.0,0.4,A,Z,AZ,0,Dormant — risque obsolescence,95480.0,248.0,1.2695699569414098,333,10,0.0,1,À risque
+P0027,Cartouche HP 963 Couleur,Cartouche,HP,Dubaï,95.0,133.0,0.4,C,X,CX,0,Dormant — risque obsolescence,11970.0,90.0,0.0,1067,35,0.0,1,À risque
+P0028,Cartouche HP 222A,Cartouche,HP,Dubaï,105.0,147.0,0.4,A,Y,AY,2,Bestseller stable,82761.0,563.0,0.6904624775694755,338,11,0.0,1,À risque
+P0029,Cartouche HP 59,Cartouche,HP,Dubaï,80.0,112.0,0.4,A,Y,AY,2,Bestseller stable,82096.0,733.0,0.6229940537909894,298,9,0.0,1,À risque
+P0030,Cartouche Canon 055,Cartouche,Canon,Dubaï,130.0,182.0,0.4,B,Z,BZ,0,Dormant — risque obsolescence,54558.0,299.0,1.192139806923731,684,22,0.0,1,À risque
+P0031,Cartouche Canon 071,Cartouche,Canon,Dubaï,120.0,168.0,0.4,C,X,CX,0,Dormant — risque obsolescence,11592.0,69.0,0.0,1068,35,0.0,1,À risque
+P0032,Cartouche Canon 137,Cartouche,Canon,Dubaï,140.0,196.0,0.4,B,Z,BZ,0,Dormant — risque obsolescence,36708.0,187.0,1.4073933581679337,499,16,0.0,1,À risque
+P0134,Clavier HP filaire,Accessoire,HP,Chine,14.0,21.0,0.5,C,X,CX,1,Rotation modérée,26829.0,1277.0,0.4402289889581841,1,0,336.0,0,Actif
+P0135,Clavier Dell filaire,Accessoire,Dell,Chine,13.0,19.5,0.5,C,X,CX,1,Rotation modérée,27184.5,1391.0,0.4090760097523697,0,0,156.0,0,Actif
+P0136,Clavier Logitech K120,Accessoire,Logitech,Chine,12.0,18.0,0.5,C,X,CX,1,Rotation modérée,28899.0,1605.0,0.3526716257651436,1,0,144.0,0,Actif
+P0137,Clavier sans fil Logitech MK270,Accessoire,Logitech,Chine,26.0,39.0,0.5,C,Y,CY,1,Rotation modérée,9204.0,236.0,0.7734168987300828,10,0,806.0,0,Actif
+P0138,Clavier pliable Bluetooth,Accessoire,Generic,Chine,22.0,33.0,0.5,B,X,BX,1,Rotation modérée,40524.0,1228.0,0.3986956997759335,2,0,396.0,0,Actif
+P0139,Souris HP filaire,Accessoire,HP,Chine,7.0,10.5,0.5,C,Y,CY,1,Rotation modérée,2541.0,242.0,0.6849360529963471,8,0,273.0,0,Actif
+P0140,Souris Dell filaire,Accessoire,Dell,Chine,6.0,9.0,0.5,C,X,CX,1,Rotation modérée,13311.0,1425.0,0.3457257125270477,1,0,156.0,0,Actif
+P0141,Souris sans fil Logitech M185,Accessoire,Logitech,Chine,11.0,16.5,0.5,C,X,CX,1,Rotation modérée,24138.0,1461.0,0.4450302253861455,1,0,297.0,0,Actif
+P0142,Souris gaming RGB,Accessoire,Generic,Chine,15.0,22.5,0.5,C,Y,CY,1,Rotation modérée,4927.5,219.0,0.6923908879221425,0,0,1230.0,0,Actif
+P0143,Tapis de souris,Accessoire,Generic,Chine,3.0,4.5,0.5,C,X,CX,1,Rotation modérée,6255.0,1354.0,0.4856318803894989,2,0,24.0,0,Actif
+P0144,Chargeur Laptop universel 65W,Accessoire,Generic,Chine,24.0,36.0,0.5,C,Y,CY,2,Bestseller stable,30924.0,859.0,0.7487350613057333,381,12,432.0,1,À risque
+P0145,Chargeur Laptop USB-C 65W,Accessoire,Generic,Chine,28.0,42.0,0.5,B,X,BX,2,Bestseller stable,67326.0,1603.0,0.4319356640582926,2,0,560.0,0,Actif
+P0146,Chargeur Laptop HP 65W original,Accessoire,HP,Dubaï,38.0,57.0,0.5,B,Y,BY,2,Bestseller stable,58197.0,1021.0,0.5021345234178469,3,0,1330.0,0,Actif
+P0147,Chargeur Laptop Dell 65W original,Accessoire,Dell,Dubaï,38.0,57.0,0.5,A,X,AX,2,Bestseller stable,96558.0,1694.0,0.4344263981398124,1,0,836.0,0,Actif
+P0148,Sacoche Laptop 15.6 pouces,Accessoire,Generic,Chine,14.0,21.0,0.5,C,X,CX,1,Rotation modérée,27912.0,1328.0,0.4064859194719889,0,0,392.0,0,Actif
+P0149,Sacoche Laptop HP 15.6,Accessoire,HP,Chine,22.0,33.0,0.5,B,X,BX,1,Rotation modérée,49104.0,1488.0,0.3986747781245391,6,0,418.0,0,Actif
+P0150,Support Laptop refroidisseur,Accessoire,Generic,Chine,18.0,27.0,0.5,C,Y,CY,1,Rotation modérée,31023.0,1149.0,0.5541036995939067,0,0,1386.0,0,Actif
+P0151,Casque audio filaire,Accessoire,Generic,Chine,9.0,13.5,0.5,C,Y,CY,1,Rotation modérée,18265.5,1299.0,0.551190706578657,0,0,144.0,0,Actif
+P0152,Casque Bluetooth,Accessoire,Generic,Chine,18.0,27.0,0.5,B,X,BX,1,Rotation modérée,39420.0,1460.0,0.3391359056193099,1,0,432.0,0,Actif
+P0153,Ecouteurs Stereo,Accessoire,Generic,Chine,5.0,7.5,0.5,C,X,CX,1,Rotation modérée,10560.0,1336.0,0.4550521122552575,0,0,200.0,0,Actif
+P0154,JBL Boomer Bluetooth,Accessoire,JBL,Dubaï,104.0,156.0,0.5,B,X,BX,1,Rotation modérée,38409.0,1370.0,0.4410013011479979,1,0,3224.0,0,Actif
+P0155,Speaker Bluetooth portable,Accessoire,Generic,Chine,22.0,33.0,0.5,B,X,BX,1,Rotation modérée,41877.0,1269.0,0.4197034135279973,6,0,792.0,0,Actif
+P0156,Webcam HD 720p,Accessoire,Generic,Chine,18.0,27.0,0.5,B,X,BX,1,Rotation modérée,34020.0,1260.0,0.4456724208491472,3,0,414.0,0,Actif
+P0157,Webcam HP 320 FHD,Accessoire,HP,Dubaï,38.0,57.0,0.5,B,X,BX,2,Bestseller stable,71706.0,1258.0,0.3742416877523847,2,0,950.0,0,Actif
+P0158,Webcam Logitech C270 HD,Accessoire,Logitech,Dubaï,32.0,48.0,0.5,B,X,BX,1,Rotation modérée,73536.0,1532.0,0.2947026167384373,0,0,512.0,0,Actif
+P0159,Micro USB Studio,Accessoire,Generic,Chine,28.0,42.0,0.5,B,X,BX,1,Rotation modérée,63966.0,1523.0,0.3353735171729842,2,0,616.0,0,Actif
+P0160,Hub USB 3.0 4 ports,Accessoire,Generic,Chine,8.0,12.0,0.5,C,Y,CY,1,Rotation modérée,16392.0,1339.0,0.5066198643546456,0,0,104.0,0,Actif
+P0161,Hub USB Card Reader,Accessoire,Generic,Chine,9.0,13.5,0.5,C,Z,CZ,1,Rotation modérée,2565.0,190.0,1.008189000147525,12,0,243.0,0,Actif
+P0162,Convertisseur HDMI vers AV,Accessoire,Generic,Chine,7.0,10.5,0.5,C,Y,CY,0,Dormant — risque obsolescence,4326.0,403.0,0.9212758249706896,579,19,91.0,1,À risque
+P0163,Convertisseur AV vers HDMI,Accessoire,Generic,Chine,8.0,12.0,0.5,C,X,CX,1,Rotation modérée,17184.0,1423.0,0.4985638589990596,0,0,608.0,0,Actif
+P0036,Imprimante HP 4120,Imprimante,HP,Dubaï,132.0,158.4,0.2,C,Y,CY,2,Bestseller stable,16632.0,105.0,0.6825460469911132,8,0,2244.0,0,Actif
+P0037,Imprimante HP LaserJet MFP 183fw,Imprimante,HP,Dubaï,600.0,720.0,0.2,A,X,AX,2,Bestseller stable,205920.0,286.0,0.484469548889972,2,0,7200.0,0,Actif
+P0038,Imprimante HP LaserJet M 283Fdw,Imprimante,HP,Dubaï,680.0,816.0,0.2,B,Y,BY,2,Bestseller stable,74256.0,91.0,0.5435237646158879,13,0,6120.0,0,Actif
+P0039,Imprimante HP LaserJet 107A,Imprimante,HP,Dubaï,184.0,220.8,0.2,B,Y,BY,2,Bestseller stable,57532.8,260.0,0.661236833868864,0,0,0.0,0,Actif
+P0040,Imprimante HP LaserJet 107W,Imprimante,HP,Dubaï,224.0,268.8,0.2,A,Y,AY,2,Bestseller stable,95577.6,355.0,0.5427240558477459,1,0,2240.0,0,Actif
+P0041,Imprimante HP LaserJet 135A,Imprimante,HP,Dubaï,280.0,336.0,0.2,C,Z,CZ,0,Dormant — risque obsolescence,21168.0,63.0,1.4429794180744904,66,2,280.0,0,Actif
+P0042,Imprimante HP LaserJet 135W,Imprimante,HP,Dubaï,320.0,384.0,0.2,A,Y,AY,2,Bestseller stable,99456.0,259.0,0.6106973479827912,7,0,5760.0,0,Actif
+P0043,Imprimante HP LaserJet M 428Fdw,Imprimante,HP,Dubaï,544.0,652.8,0.2,A,Y,AY,2,Bestseller stable,207590.4,318.0,0.6589576550915925,1,0,3264.0,0,Actif
+P0044,Imprimante HP Pro 7740,Imprimante,HP,Dubaï,416.0,499.2,0.2,A,Y,AY,2,Bestseller stable,112819.2,226.0,0.5650911963087597,0,0,4160.0,0,Actif
+P0045,Imprimante HP Pro 7720,Imprimante,HP,Dubaï,388.0,465.6,0.2,A,Y,AY,2,Bestseller stable,100104.0,215.0,0.6786618717606874,8,0,3492.0,0,Actif
+P0046,Imprimante HP 415,Imprimante,HP,Dubaï,288.0,345.6,0.2,A,Y,AY,2,Bestseller stable,127526.4,369.0,0.502564173717151,0,0,2304.0,0,Actif
+P0047,Imprimante HP DeskJet Plus 4120,Imprimante,HP,Dubaï,132.0,158.4,0.2,C,Z,CZ,0,Dormant — risque obsolescence,11246.4,71.0,1.2760963678700958,550,18,1848.0,1,À risque
+P0048,Imprimante HP 3790,Imprimante,HP,Dubaï,96.0,115.2,0.2,B,Y,BY,2,Bestseller stable,31449.6,273.0,0.5625305148850539,150,4,0.0,1,À risque
+P0049,Imprimante HP DeskJet 2320,Imprimante,HP,Dubaï,72.0,86.4,0.2,C,Y,CY,2,Bestseller stable,19699.2,228.0,0.6377018024096787,3,0,576.0,0,Actif
+P0050,Imprimante HP DeskJet 2710,Imprimante,HP,Dubaï,84.0,100.8,0.2,C,Y,CY,2,Bestseller stable,28324.8,263.0,0.5656296344503869,5,0,588.0,0,Actif
+P0051,Imprimante HP MFP M 479fdw,Imprimante,HP,Dubaï,720.0,864.0,0.2,A,Y,AY,2,Bestseller stable,204768.0,237.0,0.7200884143690847,2,0,0.0,0,Actif
+P0052,Imprimante HP Color LaserJet Pro M183fw,Imprimante,HP,Dubaï,552.0,662.4,0.2,A,Y,AY,2,Bestseller stable,102672.0,155.0,0.7708737756414239,7,0,1104.0,0,Actif
+P0053,Imprimante HP LaserJet Pro MFP 3303fdw,Imprimante,HP,Dubaï,592.0,710.4,0.2,B,Y,BY,0,Dormant — risque obsolescence,58252.8,82.0,0.8276301970144111,849,27,0.0,1,À risque
+P0054,Imprimante Canon MF3010,Imprimante,Canon,Dubaï,320.0,384.0,0.2,B,Y,BY,2,Bestseller stable,74496.0,194.0,0.6733035819063038,5,0,2240.0,0,Actif
+P0055,Imprimante Canon MF 112,Imprimante,Canon,Dubaï,304.0,364.8,0.2,A,Y,AY,2,Bestseller stable,82080.0,225.0,0.7607379458277482,25,0,1824.0,0,Actif
+P0056,Imprimante Canon G3415,Imprimante,Canon,Dubaï,280.0,336.0,0.2,A,Y,AY,2,Bestseller stable,91392.0,272.0,0.5681225421827875,0,0,3640.0,0,Actif
+P0057,Imprimante Canon G3410,Imprimante,Canon,Dubaï,224.0,268.8,0.2,B,Y,BY,2,Bestseller stable,48115.2,179.0,0.6917468774795535,6,0,2912.0,1,À risque
+P0058,Imprimante Canon G2470,Imprimante,Canon,Dubaï,280.0,336.0,0.2,B,Y,BY,2,Bestseller stable,73248.0,218.0,0.6859469106540349,8,0,280.0,0,Actif
+P0059,Imprimante Canon MG2540,Imprimante,Canon,Dubaï,72.0,86.4,0.2,C,Y,CY,2,Bestseller stable,23241.6,233.0,0.7322301868942523,7,0,216.0,0,Actif
+P0060,Imprimante Canon 3326i,Imprimante,Canon,Dubaï,420.0,504.0,0.2,A,Y,AY,2,Bestseller stable,92736.0,184.0,0.6669046772224763,5,0,1260.0,0,Actif
+P0061,Imprimante Epson L3150,Imprimante,Epson,Dubaï,280.0,336.0,0.2,B,Y,BY,2,Bestseller stable,33264.0,99.0,0.7267656898035038,17,0,4480.0,0,Actif
+P0062,Imprimante Epson L805,Imprimante,Epson,Dubaï,360.0,432.0,0.2,A,Y,AY,2,Bestseller stable,112320.0,260.0,0.5912635294729998,1,0,3240.0,0,Actif
+P0094,Routeur TP Link 28 ports,Reseau,TP-Link,Chine,245.0,318.5,0.3,A,X,AX,2,Bestseller stable,220402.0,692.0,0.3337160834409175,0,0,2450.0,0,Actif
+P0095,Routeur TP Link AC 1350 Archer C60,Reseau,TP-Link,Chine,75.0,97.5,0.3,B,X,BX,2,Bestseller stable,68737.5,705.0,0.4440540367829835,0,0,975.0,0,Actif
+P0096,Router Pro 3 D-Link,Reseau,D-Link,Chine,98.0,127.4,0.3,A,X,AX,2,Bestseller stable,83447.0,655.0,0.4158501905195618,1,0,1470.0,0,Actif
+P0097,TP Link Switch 8 ports,Reseau,TP-Link,Chine,69.0,89.7,0.3,B,Y,BY,2,Bestseller stable,31305.300000000003,349.0,0.7912416547874775,373,12,1173.0,1,À risque
+P0098,TP Link Switch 16 ports,Reseau,TP-Link,Chine,192.0,249.6,0.3,A,X,AX,2,Bestseller stable,150758.4,604.0,0.4363888823045579,7,0,1152.0,0,Actif
+P0099,TP Link Switch 6 ports,Reseau,TP-Link,Chine,57.0,74.1,0.3,B,X,BX,2,Bestseller stable,52352.3,705.0,0.3676950337510405,0,0,1311.0,0,Actif
+P0100,TP Link Adapter PoE,Reseau,TP-Link,Chine,31.0,40.3,0.3,C,X,CX,1,Rotation modérée,4030.0,100.0,0.4355948314005311,13,0,279.0,0,Actif
+P0101,D-Link Mobile Router,Reseau,D-Link,Chine,100.0,130.0,0.3,C,Z,CZ,0,Dormant — risque obsolescence,24180.0,186.0,1.0008789365653985,400,13,900.0,1,À risque
+P0102,D-Link Wireless N300,Reseau,D-Link,Chine,65.0,84.5,0.3,B,X,BX,2,Bestseller stable,61769.5,731.0,0.4800524015201197,5,0,780.0,0,Actif
+P0103,USB WiFi TP Link TL-WN823N,Reseau,TP-Link,Chine,15.0,19.5,0.3,C,X,CX,1,Rotation modérée,11641.5,561.0,0.412574481793,2,0,150.0,0,Actif
+P0104,Switch Cisco 16 ports,Reseau,Cisco,Dubaï,320.0,416.0,0.3,A,X,AX,2,Bestseller stable,297856.0,716.0,0.4377937412658699,4,0,7360.0,0,Actif
+P0105,Switch Cisco 24 ports,Reseau,Cisco,Dubaï,480.0,624.0,0.3,A,X,AX,2,Bestseller stable,408720.0,655.0,0.3188109636514098,5,0,10080.0,0,Actif
+P0106,Switch Hikvision 4 ports PoE,Reseau,Hikvision,Chine,85.0,110.5,0.3,C,Z,CZ,0,Dormant — risque obsolescence,14586.0,132.0,1.2556749486708638,331,10,340.0,1,À risque
+P0107,Switch 16 port PoE Hikvision,Reseau,Hikvision,Chine,215.0,279.5,0.3,A,Y,AY,2,Bestseller stable,171333.5,613.0,0.6275864655839742,0,0,2795.0,0,Actif
+P0108,Nano Station M2 Ubiquity,Reseau,Ubiquiti,Chine,108.0,140.4,0.3,C,Y,CY,2,Bestseller stable,13478.4,96.0,0.5997035905776488,12,0,2268.0,0,Actif
+P0109,Nano Station 5GHz Ubiquity,Reseau,Ubiquiti,Chine,135.0,175.5,0.3,A,X,AX,2,Bestseller stable,93717.0,534.0,0.3899470768504903,0,0,4050.0,0,Actif
+P0110,Starlink Standard,Reseau,SpaceX,Dubaï,461.0,599.3,0.3,A,X,AX,2,Bestseller stable,362576.5,605.0,0.4481911110070292,5,0,7376.0,0,Actif
+P0111,Antenne WiFi Long Range,Reseau,Generic,Chine,45.0,58.5,0.3,B,X,BX,2,Bestseller stable,40072.5,676.0,0.4461240239275674,1,0,270.0,1,À risque
+P0112,Access Point Wireless TP-Link,Reseau,TP-Link,Chine,88.0,114.4,0.3,B,X,BX,2,Bestseller stable,76762.40000000001,671.0,0.3512657588681042,1,0,2816.0,0,Actif
+P0113,Patch Panel Rack 24 ports,Reseau,Generic,Chine,75.0,97.5,0.3,B,Y,BY,2,Bestseller stable,41112.5,420.0,0.549794554791273,11,0,450.0,0,Actif
+P0114,Patch Panel Rack 48 ports,Reseau,Generic,Chine,135.0,175.5,0.3,B,Y,BY,2,Bestseller stable,65461.5,373.0,0.6727277382123071,289,9,2160.0,1,À risque
+P0115,Telephone Fixe WiFi IP,Reseau,Generic,Chine,200.0,260.0,0.3,A,X,AX,2,Bestseller stable,150540.0,579.0,0.3983643974211319,0,0,3600.0,0,Actif
+P0066,Desktop HP 290G4 i3 8Gb 1To,Ordinateur,HP,Dubaï,552.0,634.8,0.15,A,Y,AY,2,Bestseller stable,97124.4,153.0,0.6774389575616425,3,0,4416.0,0,Actif
+P0067,Desktop HP 290G4 i5 8Gb 1To,Ordinateur,HP,Dubaï,722.0,830.3,0.15,A,Y,AY,2,Bestseller stable,106278.4,128.0,0.7073469261352902,256,8,0.0,1,À risque
+P0068,Desktop HP 290G4 i7 8Gb 1To,Ordinateur,HP,Dubaï,833.0,957.95,0.15,A,Y,AY,2,Bestseller stable,133155.05000000002,139.0,0.7481668503349829,0,0,833.0,0,Actif
+P0069,Desktop HP 290G4 i5 16Gb 512SSD,Ordinateur,HP,Dubaï,850.0,977.5,0.15,A,X,AX,2,Bestseller stable,138805.0,142.0,0.4580562332236952,313,10,850.0,1,À risque
+P0070,Desktop Dell 3080 i3 8Gb 1To,Ordinateur,Dell,Dubaï,569.0,654.35,0.15,B,Y,BY,0,Dormant — risque obsolescence,37297.95,57.0,0.6664987616982142,706,23,0.0,1,À risque
+P0071,Desktop Dell 3080 i5 8Gb 1To,Ordinateur,Dell,Dubaï,637.0,732.55,0.15,A,Y,AY,2,Bestseller stable,101824.45,139.0,0.5991956323903167,296,9,0.0,1,À risque
+P0072,Desktop Dell 3080 i7 8Gb 1To,Ordinateur,Dell,Dubaï,790.0,908.5,0.15,A,X,AX,2,Bestseller stable,157170.5,173.0,0.4880785301778805,1,0,4740.0,0,Actif
+P0073,Desktop Dell Optiplex 7090 i7,Ordinateur,Dell,Dubaï,980.0,1127.0,0.15,A,Y,AY,2,Bestseller stable,173558.0,154.0,0.5455824813177929,128,4,0.0,1,À risque
+P0074,Laptop HP ProBook 450 G8 i7 16Gb 512SSD,Ordinateur,HP,Dubaï,1190.0,1368.5,0.15,B,Y,BY,2,Bestseller stable,65688.0,48.0,0.5458174297937605,1,0,7140.0,0,Actif
+P0075,Laptop HP ProBook 440 G8 i5 8Gb 256SSD,Ordinateur,HP,Dubaï,850.0,977.5,0.15,B,Y,BY,2,Bestseller stable,63537.5,65.0,0.6941349737791359,32,1,9350.0,0,Actif
+P0076,Laptop HP 250 G8 i3 8Gb 1To,Ordinateur,HP,Dubaï,595.0,684.25,0.15,A,Y,AY,2,Bestseller stable,101269.0,148.0,0.6232762074573773,13,0,3570.0,0,Actif
+P0077,Laptop Dell Latitude 3520 i7 16Gb 512SSD,Ordinateur,Dell,Dubaï,1275.0,1466.25,0.15,C,Z,CZ,0,Dormant — risque obsolescence,21993.75,15.0,1.469693845669907,687,22,0.0,1,À risque
+P0078,Laptop Dell Latitude 3520 i5 8Gb 256SSD,Ordinateur,Dell,Dubaï,935.0,1075.25,0.15,A,Y,AY,2,Bestseller stable,139782.5,130.0,0.6398110781697581,3,0,5610.0,0,Actif
+P0079,Laptop Dell Vostro 3500 i5 8Gb 1To,Ordinateur,Dell,Dubaï,765.0,879.75,0.15,C,Z,CZ,0,Dormant — risque obsolescence,21114.0,24.0,1.1913315379579832,966,31,0.0,1,À risque
+P0080,Laptop Dell Inspiron 15 i7 16Gb 512SSD,Ordinateur,Dell,Dubaï,1105.0,1270.75,0.15,A,Y,AY,2,Bestseller stable,283377.25,223.0,0.530275999374903,0,0,4420.0,0,Actif
+P0081,Laptop Lenovo ThinkPad E15 i5,Ordinateur,Lenovo,Dubaï,935.0,1075.25,0.15,C,Y,CY,0,Dormant — risque obsolescence,29031.75,27.0,0.903430438344479,932,30,0.0,1,À risque
+P0082,Laptop Lenovo IdeaPad 3 i3 8Gb,Ordinateur,Lenovo,Dubaï,510.0,586.5,0.15,C,Z,CZ,0,Dormant — risque obsolescence,11730.0,20.0,1.541103500742244,888,29,0.0,1,À risque
+P0083,Laptop Asus Vivobook i5 8Gb 512SSD,Ordinateur,Asus,Dubaï,765.0,879.75,0.15,C,Y,CY,0,Dormant — risque obsolescence,29911.5,34.0,0.6960093862470138,806,26,0.0,1,À risque
+P0196,Papier Duplicateur Type K A4 (rame),Papeterie,TypeK,Dubaï,4.2,5.88,0.4,C,Y,CY,1,Rotation modérée,4880.4,830.0,0.8089354376672058,497,16,184.8,1,À risque
+P0197,Papier Duplicateur A3 (rame),Papeterie,Chamex,Dubaï,8.5,11.9,0.4,C,X,CX,1,Rotation modérée,23740.5,1995.0,0.315022545777508,2,0,212.5,0,Actif
+P0198,Papier Duplicateur Eclipse A4 (rame),Papeterie,Eclipse,Dubaï,3.8,5.32,0.4,C,X,CX,1,Rotation modérée,9214.24,1732.0,0.4281604645759845,0,0,250.8,0,Actif
+P0199,Papier Photo A4 (paquet 20),Papeterie,Generic,Chine,4.5,6.3,0.4,C,Y,CY,1,Rotation modérée,7591.5,1205.0,0.6952244162123579,376,12,117.0,1,À risque
+P0200,Encre Correcteur,Papeterie,Generic,Chine,1.5,2.1,0.4,C,X,CX,1,Rotation modérée,4815.3,2203.0,0.4473357210241614,0,0,124.5,0,Actif
+P0201,Marker Whiteboard (boîte 12),Papeterie,Generic,Chine,9.0,12.6,0.4,C,X,CX,1,Rotation modérée,28891.8,2293.0,0.3652935243704386,1,0,198.0,0,Actif
+P0202,Stylo Bille bleu (boîte 50),Papeterie,Bic,Chine,4.5,6.3,0.4,C,Y,CY,1,Rotation modérée,6337.8,1006.0,0.6559322308453155,418,13,171.0,1,À risque
+P0203,Agrafeuse DS 45,Papeterie,Generic,Chine,7.0,9.8,0.4,C,X,CX,1,Rotation modérée,16640.4,1698.0,0.3931786461784758,2,0,189.0,0,Actif
+P0204,Agrafes boîte 1000,Papeterie,Generic,Chine,1.5,2.1,0.4,C,X,CX,1,Rotation modérée,3471.3,1635.0,0.3960287188289381,6,0,18.0,0,Actif
+P0205,Cutter B3,Papeterie,Generic,Chine,1.5,2.1,0.4,C,X,CX,1,Rotation modérée,4668.3,2160.0,0.4033785885669759,0,0,61.5,0,Actif
+P0206,Cutter B4,Papeterie,Generic,Chine,2.0,2.8,0.4,C,Y,CY,1,Rotation modérée,3628.8,1260.0,0.6914629048012533,415,13,50.0,1,À risque
+P0207,Cahier Registre 300 pages,Papeterie,Generic,Chine,6.0,8.4,0.4,C,X,CX,1,Rotation modérée,15808.8,1882.0,0.3984105532982405,1,0,156.0,0,Actif
+P0208,Farde à suspension (boîte 25),Papeterie,Alba,Chine,14.0,19.6,0.4,B,X,BX,1,Rotation modérée,37024.4,1889.0,0.4884869492616881,0,0,252.0,1,À risque
+P0209,Farde Chemise A4 (paquet 100),Papeterie,Generic,Chine,7.5,10.5,0.4,C,X,CX,1,Rotation modérée,20779.5,1979.0,0.3847481806965339,2,0,97.5,1,À risque
+P0210,Enveloppe A4 (paquet 50),Papeterie,Generic,Chine,4.0,5.6,0.4,C,X,CX,1,Rotation modérée,10348.8,1848.0,0.4538823681901694,0,0,148.0,0,Actif
+P0211,Enveloppe Par Avion (paquet 25),Papeterie,Generic,Chine,3.0,4.2,0.4,C,X,CX,1,Rotation modérée,7014.0,1669.0,0.3832651097776411,5,0,72.0,0,Actif
+P0212,Laminateur A3 Métalic,Papeterie,Generic,Chine,110.0,154.0,0.4,B,X,BX,1,Rotation modérée,32324.6,2018.0,0.3574494805093814,1,0,6600.0,0,Actif
+P0213,Laminateur A4 Plastic,Papeterie,Generic,Chine,50.0,70.0,0.4,C,Y,CY,1,Rotation modérée,5761.0,805.0,0.6910961920383176,545,17,950.0,1,À risque
+P0119,Cable SFTP CAT 6 (mètre),Cable,Generic,Chine,1.2,1.62,0.35,C,Y,CY,1,Rotation modérée,377.46,233.0,0.8902190147864644,5,0,34.8,0,Actif
+P0120,Cable Coaxial (mètre),Cable,Generic,Chine,1.0,1.35,0.35,C,X,CX,1,Rotation modérée,2467.8,1666.0,0.4568028708820862,5,0,116.0,0,Actif
+P0121,Cable HDMI 1.5m,Cable,Generic,Chine,4.5,6.08,0.35,C,X,CX,1,Rotation modérée,7296.0,1200.0,0.4058641574291998,1,0,900.0,0,Actif
+P0122,Cable HDMI 3m,Cable,Generic,Chine,7.5,10.12,0.35,C,X,CX,1,Rotation modérée,15503.84,1532.0,0.4036793334744165,0,0,540.0,0,Actif
+P0123,Cable HDMI 5m,Cable,Generic,Chine,11.0,14.85,0.35,C,X,CX,1,Rotation modérée,21740.4,1464.0,0.4346669829109872,0,0,858.0,0,Actif
+P0124,Cable USB 3.0,Cable,Generic,Chine,3.5,4.73,0.35,C,Z,CZ,1,Rotation modérée,1035.87,219.0,1.01633102913912,35,1,252.0,1,À risque
+P0125,Cable USB Type-C,Cable,Generic,Chine,5.0,6.75,0.35,C,X,CX,1,Rotation modérée,10111.5,1498.0,0.3994052984601929,1,0,210.0,0,Actif
+P0126,Cable VGA 1.5m,Cable,Generic,Chine,3.5,4.73,0.35,C,X,CX,1,Rotation modérée,7558.54,1598.0,0.3955977839067436,0,0,735.0,0,Actif
+P0127,Cable Ethernet 5m RJ45,Cable,Generic,Chine,4.0,5.4,0.35,C,X,CX,1,Rotation modérée,7360.2,1363.0,0.3916641069171278,1,0,280.0,0,Actif
+P0128,Cable Ethernet 10m RJ45,Cable,Generic,Chine,7.0,9.45,0.35,C,Y,CY,1,Rotation modérée,8268.75,875.0,0.6750397211529586,485,15,546.0,1,À risque
+P0129,Connecteur RJ45 blindé,Cable,Generic,Chine,0.45,0.61,0.35,C,X,CX,1,Rotation modérée,905.24,1457.0,0.4092291234562014,0,0,67.5,0,Actif
+P0130,Cable Imprimante USB B,Cable,Generic,Chine,3.5,4.73,0.35,C,X,CX,1,Rotation modérée,7795.04,1648.0,0.4239411616723686,0,0,217.0,0,Actif
+P0131,Cable Audio Jack 3.5mm,Cable,Generic,Chine,3.0,4.05,0.35,C,X,CX,1,Rotation modérée,6833.7,1684.0,0.4485124164432328,0,0,636.0,0,Actif
+P0132,Cable Power IEC,Cable,Generic,Chine,4.5,6.08,0.35,C,X,CX,1,Rotation modérée,8730.88,1436.0,0.3988595607021526,0,0,544.5,0,Actif
+P0169,Clé USB 8 Go,Stockage,Generic,Chine,4.0,5.4,0.35,C,Z,CZ,1,Rotation modérée,1020.6,189.0,1.213046623738372,22,0,60.0,0,Actif
+P0170,Clé USB 16 Go,Stockage,Generic,Chine,6.0,8.1,0.35,C,X,CX,1,Rotation modérée,8861.4,986.0,0.4664518093127771,0,0,126.0,1,À risque
+P0171,Clé USB 32 Go,Stockage,SanDisk,Chine,9.0,12.15,0.35,C,Y,CY,1,Rotation modérée,14604.3,1202.0,0.54238495110783,0,0,315.0,0,Actif
+P0172,Clé USB 64 Go,Stockage,SanDisk,Chine,13.0,17.55,0.35,C,Z,CZ,1,Rotation modérée,3562.65,203.0,1.0861624005571442,10,0,455.0,0,Actif
+P0173,Clé USB 128 Go,Stockage,SanDisk,Chine,22.0,29.7,0.35,C,Z,CZ,1,Rotation modérée,6979.5,235.0,1.036614465892118,8,0,110.0,0,Actif
+P0174,Carte mémoire SD 32 Go,Stockage,SanDisk,Chine,11.0,14.85,0.35,C,X,CX,1,Rotation modérée,16141.95,1087.0,0.463514048250797,2,0,55.0,0,Actif
+P0175,Carte mémoire SD 64 Go,Stockage,SanDisk,Chine,18.0,24.3,0.35,C,Y,CY,1,Rotation modérée,24129.9,993.0,0.5182696212625522,3,0,504.0,0,Actif
+P0176,Carte mémoire Micro SD 128 Go,Stockage,SanDisk,Chine,26.0,35.1,0.35,B,Y,BY,1,Rotation modérée,34959.6,996.0,0.5432347522190544,9,0,1326.0,0,Actif
+P0177,Disque dur externe 1 To Seagate,Stockage,Seagate,Dubaï,56.0,75.6,0.35,A,X,AX,2,Bestseller stable,86562.0,1145.0,0.4945530481641501,2,0,3360.0,0,Actif
+P0178,Disque dur externe 2 To Seagate,Stockage,Seagate,Dubaï,82.0,110.7,0.35,A,X,AX,2,Bestseller stable,112471.2,1016.0,0.4792257468641372,0,0,4920.0,0,Actif
+P0179,Disque dur externe 1 To WD,Stockage,WD,Dubaï,58.0,78.3,0.35,B,Y,BY,2,Bestseller stable,72819.0,930.0,0.6261265749707834,7,0,1276.0,1,À risque
+P0180,SSD 240 Go Kingston,Stockage,Kingston,Dubaï,32.0,43.2,0.35,B,X,BX,1,Rotation modérée,37972.8,879.0,0.4534675443303951,0,0,2240.0,0,Actif
+P0181,SSD 480 Go Kingston,Stockage,Kingston,Dubaï,48.0,64.8,0.35,C,Y,CY,2,Bestseller stable,15163.2,234.0,0.913201270494236,16,0,768.0,0,Actif
+P0184,Onduleur 650 VA APC,Onduleur,APC,Dubaï,96.0,120.0,0.25,B,X,BX,2,Bestseller stable,55440.0,462.0,0.4830450601947413,2,0,864.0,0,Actif
+P0185,Onduleur 725 VA APC,Onduleur,APC,Dubaï,112.0,140.0,0.25,C,Y,CY,2,Bestseller stable,30100.0,215.0,0.6993777656309577,3,0,672.0,0,Actif
+P0186,Onduleur 1050 VA APC,Onduleur,APC,Dubaï,152.0,190.0,0.25,A,Y,AY,2,Bestseller stable,80180.0,422.0,0.5999740084921515,8,0,2128.0,0,Actif
+P0187,Onduleur 1250 VA APC,Onduleur,APC,Dubaï,184.0,230.0,0.25,C,Z,CZ,2,Bestseller stable,26220.0,114.0,1.1441083693762804,6,0,920.0,0,Actif
+P0188,Onduleur 1500 VA APC,Onduleur,APC,Dubaï,216.0,270.0,0.25,A,X,AX,2,Bestseller stable,107460.0,398.0,0.4555800701479481,8,0,2808.0,0,Actif
+P0189,Onduleur 1550 VA Mercury,Onduleur,Mercury,Chine,144.0,180.0,0.25,A,X,AX,2,Bestseller stable,94680.0,526.0,0.4200799474020748,7,0,720.0,0,Actif
+P0190,Onduleur 2000 VA APC,Onduleur,APC,Dubaï,280.0,350.0,0.25,A,X,AX,2,Bestseller stable,133350.0,381.0,0.4929841786026352,12,0,1960.0,0,Actif
+P0191,Onduleur 2000 VA Mercury,Onduleur,Mercury,Chine,200.0,250.0,0.25,B,Y,BY,2,Bestseller stable,32750.0,131.0,0.8972762103355747,70,2,600.0,0,Actif
+P0192,Onduleur 3000 VA APC,Onduleur,APC,Dubaï,400.0,500.0,0.25,A,Y,AY,2,Bestseller stable,171000.0,342.0,0.623253396461687,3,0,8000.0,0,Actif
+P0193,Stabilisateur 1000 VA,Onduleur,Generic,Chine,60.0,75.0,0.25,C,Y,CY,2,Bestseller stable,16800.0,224.0,0.562990149259528,325,10,0.0,1,À risque
+P0194,Stabilisateur 1500 VA,Onduleur,Generic,Chine,88.0,110.0,0.25,B,X,BX,2,Bestseller stable,34560.0,312.0,0.4413151788311608,8,0,968.0,0,Actif
+P0216,Téléphone Itel Vision 3,Telephone,Itel,Chine,82.0,94.3,0.15,B,X,BX,2,Bestseller stable,47331.7,499.0,0.4437741833293447,3,0,1968.0,0,Actif
+P0217,Téléphone Itel A56,Telephone,Itel,Chine,55.0,63.25,0.15,C,X,CX,2,Bestseller stable,26501.75,419.0,0.4443889544552665,0,0,440.0,0,Actif
+P0218,Téléphone Itel P40,Telephone,Itel,Chine,95.0,109.25,0.15,B,X,BX,2,Bestseller stable,57684.0,528.0,0.4071381967048248,2,0,950.0,0,Actif
+P0219,Téléphone Tecno Camon 30,Telephone,Tecno,Chine,165.0,189.75,0.15,A,X,AX,2,Bestseller stable,93357.0,492.0,0.362704214067543,10,0,1650.0,0,Actif
+P0220,Téléphone Tecno Spark 10,Telephone,Tecno,Chine,130.0,149.5,0.15,B,Y,BY,2,Bestseller stable,70414.5,471.0,0.5004973098136355,1,0,1170.0,0,Actif
+P0221,Téléphone Samsung Galaxy A14,Telephone,Samsung,Dubaï,165.0,189.75,0.15,A,X,AX,2,Bestseller stable,94116.0,496.0,0.3729709488358133,2,0,1815.0,0,Actif
+P0222,Téléphone Samsung Galaxy A24,Telephone,Samsung,Dubaï,210.0,241.5,0.15,A,X,AX,2,Bestseller stable,102396.0,424.0,0.4743054622981746,5,0,1260.0,0,Actif
+P0223,Téléphone Samsung Fold 5,Telephone,Samsung,Dubaï,1235.0,1420.25,0.15,B,X,BX,2,Bestseller stable,69024.15000000001,486.0,0.4975345840798176,3,0,11115.0,0,Actif
+P0224,Téléphone Infinix Hot 30,Telephone,Infinix,Chine,130.0,149.5,0.15,C,Y,CY,2,Bestseller stable,12707.5,85.0,0.6750033271145045,1,0,1430.0,0,Actif
+P0225,Téléphone Nokia 105,Telephone,Nokia,Dubaï,26.0,29.9,0.15,C,Z,CZ,0,Dormant — risque obsolescence,4933.5,165.0,1.3978495881440107,302,9,104.0,1,À risque
+P0226,Téléphone Nokia 8210 4G,Telephone,Nokia,Dubaï,65.0,74.75,0.15,C,Y,CY,2,Bestseller stable,5307.25,71.0,0.8450046922794044,13,0,455.0,0,Actif
+P0236,Pile Duracell AA (paquet 4),Batterie,Duracell,Dubaï,2.0,3.0,0.5,C,X,CX,1,Rotation modérée,4179.0,1393.0,0.4324806800770592,0,0,78.0,0,Actif
+P0237,Pile Duracell AAA (paquet 4),Batterie,Duracell,Dubaï,1.8,2.7,0.5,C,X,CX,1,Rotation modérée,3504.6,1298.0,0.4323680944638522,0,0,140.4,0,Actif
+P0238,Pile GP 23A,Batterie,GP,Chine,0.8,1.2,0.5,C,X,CX,1,Rotation modérée,1593.6,1319.0,0.4233886190033143,1,0,31.200000000000003,0,Actif
+P0239,Pile CMOS CR2032,Batterie,Generic,Chine,0.5,0.75,0.5,C,Y,CY,1,Rotation modérée,897.75,1143.0,0.523163868319623,3,0,11.0,0,Actif
+P0240,Pile Sony 9V,Batterie,Sony,Dubaï,1.5,2.25,0.5,C,X,CX,1,Rotation modérée,3142.5,1396.0,0.3951591117565086,1,0,66.0,0,Actif
+P0241,Batterie Onduleur 12V 7A,Batterie,Generic,Chine,16.0,24.0,0.5,C,Y,CY,1,Rotation modérée,3921.0,1300.0,0.562707138530488,2,0,800.0,1,À risque
+P0242,Batterie Onduleur 12V 9A,Batterie,Generic,Chine,22.0,33.0,0.5,C,X,CX,1,Rotation modérée,4649.7,1373.0,0.4384371309153274,1,0,3410.0,0,Actif
+P0243,Pile rechargeable Sony AA Kit,Batterie,Sony,Dubaï,10.0,15.0,0.5,C,X,CX,1,Rotation modérée,21240.0,1416.0,0.407822513110417,1,0,230.0,0,Actif
+P0244,Pile rechargeable Sony AAA Kit,Batterie,Sony,Dubaï,9.0,13.5,0.5,C,X,CX,1,Rotation modérée,17104.5,1267.0,0.3935822746945168,1,0,477.0,0,Actif
+P0086,Moniteur 24 pouces Slim,Moniteur,Generic,Chine,200.0,240.0,0.2,B,X,BX,2,Bestseller stable,71280.0,297.0,0.446420897218573,5,0,3200.0,0,Actif
+P0087,Moniteur 27 pouces Slim,Moniteur,Generic,Chine,304.0,364.8,0.2,B,Y,BY,2,Bestseller stable,72595.2,199.0,0.5794939155766962,259,8,0.0,1,À risque
+P0088,Moniteur 32 pouces Slim,Moniteur,Generic,Chine,464.0,556.8,0.2,A,Y,AY,2,Bestseller stable,139756.8,251.0,0.5272451272756311,3,0,2784.0,0,Actif
+P0089,Moniteur HP 27 pouces FHD,Moniteur,HP,Dubaï,360.0,432.0,0.2,B,Y,BY,2,Bestseller stable,76032.0,176.0,0.6833660116916754,0,0,1800.0,0,Actif
+P0090,Moniteur Dell 24 pouces,Moniteur,Dell,Dubaï,280.0,336.0,0.2,A,Y,AY,2,Bestseller stable,78912.0,234.0,0.5947292192889102,1,0,3640.0,0,Actif
+P0091,Ecran Projecteur Acer,Moniteur,Acer,Chine,416.0,499.2,0.2,A,Y,AY,2,Bestseller stable,153254.4,307.0,0.6163637692684424,7,0,6656.0,0,Actif
+P0092,Television 43 pouces LG,Moniteur,LG,Dubaï,480.0,576.0,0.2,A,Y,AY,2,Bestseller stable,144000.0,250.0,0.5901685957661348,1,0,3360.0,0,Actif
+P0228,Caméra Hikvision Dôme 2MP,Camera,Hikvision,Chine,65.0,84.5,0.3,C,X,CX,2,Bestseller stable,19903.0,235.0,0.4851063829787234,0,0,390.0,0,Actif
+P0229,Caméra Hikvision Bullet 4MP,Camera,Hikvision,Chine,90.0,117.0,0.3,C,Y,CY,2,Bestseller stable,26091.0,223.0,0.6957731628790418,11,0,630.0,0,Actif
+P0230,Caméra Hikvision PTZ 5MP,Camera,Hikvision,Chine,270.0,351.0,0.3,A,Y,AY,2,Bestseller stable,84942.0,242.0,0.5496214301078781,277,9,0.0,1,À risque
+P0231,DVR Hikvision 8 canaux,Camera,Hikvision,Chine,165.0,214.5,0.3,C,Y,CY,0,Dormant — risque obsolescence,13084.5,61.0,0.8548516234049988,603,19,0.0,1,À risque
+P0232,DVR Hikvision 16 canaux,Camera,Hikvision,Chine,280.0,364.0,0.3,B,Y,BY,2,Bestseller stable,72800.0,200.0,0.6836540478508535,15,0,840.0,0,Actif
+P0233,NVR Hikvision 4 canaux,Camera,Hikvision,Chine,100.0,130.0,0.3,C,Z,CZ,0,Dormant — risque obsolescence,8970.0,69.0,1.0360443734267872,493,16,1300.0,1,À risque
+P0234,Caméra Dahua Bullet,Camera,Dahua,Chine,70.0,91.0,0.3,C,Y,CY,0,Dormant — risque obsolescence,8281.0,91.0,0.7971843943404071,410,13,0.0,1,À risque
+P0246,PlayStation 2 (occasion),Gaming,Sony,Dubaï,104.0,124.8,0.2,C,Y,CY,2,Bestseller stable,16473.6,132.0,0.6716663520194781,18,0,728.0,0,Actif
+P0247,PlayStation 3 (occasion),Gaming,Sony,Dubaï,240.0,288.0,0.2,C,Y,CY,2,Bestseller stable,25920.0,90.0,0.5372449150670782,276,9,0.0,1,À risque
+P0248,PlayStation 4 (occasion),Gaming,Sony,Dubaï,360.0,432.0,0.2,B,Y,BY,2,Bestseller stable,50112.0,116.0,0.5998924944824725,19,0,1080.0,0,Actif
+P0249,Manette PlayStation 5,Gaming,Sony,Dubaï,56.0,67.2,0.2,C,Y,CY,0,Dormant — risque obsolescence,1344.0,20.0,0.7071067811865476,1040,34,0.0,1,À risque
+P0250,Carte mémoire PS2,Gaming,Sony,Dubaï,12.0,14.4,0.2,C,Y,CY,1,Rotation modérée,1454.4,101.0,0.5757682530843307,23,0,36.0,0,Actif
+P0251,Table Bureau GF,Mobilier,Generic,Chine,154.0,200.2,0.3,C,Y,CY,2,Bestseller stable,26026.0,130.0,0.5709401309560352,16,0,462.0,0,Actif
+P0252,Chaise Bureau GF,Mobilier,Generic,Chine,92.0,119.6,0.3,C,Y,CY,2,Bestseller stable,13236.6,110.0,0.5136966979849698,1,0,644.0,0,Actif
+P0253,Chaise Bureau PF,Mobilier,Generic,Chine,62.0,80.6,0.3,C,Y,CY,2,Bestseller stable,11364.6,141.0,0.6424750487281191,19,0,124.0,0,Actif
+P0254,Coffre-fort électronique,Mobilier,Generic,Chine,169.0,219.7,0.3,C,X,CX,0,Dormant — risque obsolescence,2856.1,13.0,0.0,1071,35,0.0,1,À risque
+P0255,Armoire métallique,Mobilier,Generic,Chine,246.0,319.8,0.3,B,Y,BY,2,Bestseller stable,41893.8,131.0,0.5092275105932106,6,0,0.0,0,Actif
+P0266,Mémoire RAM Desktop DDR4 8 Go,Composant,Kingston,Dubaï,32.0,41.6,0.3,C,Y,CY,1,Rotation modérée,10358.4,249.0,0.6906763211238265,15,0,832.0,0,Actif
+P0267,Mémoire RAM Desktop DDR4 16 Go,Composant,Kingston,Dubaï,58.0,75.4,0.3,C,Y,CY,2,Bestseller stable,28576.6,379.0,0.5269040291688594,3,0,522.0,0,Actif
+P0268,Mémoire RAM Laptop DDR4 8 Go,Composant,Kingston,Dubaï,35.0,45.5,0.3,C,Y,CY,1,Rotation modérée,3139.5,69.0,0.680092184797154,51,1,105.0,0,Actif
+P0269,Mémoire RAM Laptop DDR4 16 Go,Composant,Kingston,Dubaï,62.0,80.6,0.3,B,Y,BY,2,Bestseller stable,33529.6,416.0,0.5678266391590223,0,0,1240.0,0,Actif
+P0270,Mémoire RAM DDR5 16 Go,Composant,Kingston,Dubaï,90.0,117.0,0.3,B,Y,BY,2,Bestseller stable,40482.0,346.0,0.6278729380858272,2,0,270.0,0,Actif
+P0271,Jeu d'encre Epson 003 Noir,JeuEncre,Epson,Dubaï,9.0,12.6,0.4,C,X,CX,1,Rotation modérée,7597.799999999999,603.0,0.4427293671718736,0,0,72.0,0,Actif
+P0272,Jeu d'encre Epson 003 Couleur,JeuEncre,Epson,Dubaï,11.0,15.4,0.4,C,X,CX,1,Rotation modérée,7884.8,512.0,0.4222468599223513,1,0,143.0,0,Actif
+P0273,Jeu d'encre Epson 664 Quadri,JeuEncre,Epson,Dubaï,25.0,35.0,0.4,C,Y,CY,1,Rotation modérée,12775.0,365.0,0.7001728869952354,338,11,700.0,1,À risque
+P0274,Jeu d'encre Epson 108 Noir,JeuEncre,Epson,Dubaï,13.0,18.2,0.4,C,X,CX,1,Rotation modérée,10592.4,582.0,0.4104372917731936,0,0,481.0,0,Actif
+P0275,Jeu d'encre Epson 102 EcoTank,JeuEncre,Epson,Dubaï,27.0,37.8,0.4,C,X,CX,1,Rotation modérée,21432.6,567.0,0.4126769093933926,0,0,351.0,0,Actif
+P0276,Machine à compter les espèces,Divers,Generic,Chine,200.0,260.0,0.3,C,X,CX,1,Rotation modérée,11622.0,447.0,0.4677781506566333,2,0,3200.0,0,Actif
+P0277,Calculatrice scientifique Casio,Divers,Casio,Chine,16.0,20.8,0.3,C,Y,CY,1,Rotation modérée,4804.8,231.0,0.810539446687533,26,0,112.0,0,Actif
+P0278,Calculatrice de bureau 12 digits,Divers,Casio,Chine,12.0,15.6,0.3,C,X,CX,1,Rotation modérée,5982.599999999999,381.0,0.4130241065681234,8,0,60.0,0,Actif
+P0279,Antivirus Kaspersky 1 an,Divers,Kaspersky,Dubaï,22.0,28.6,0.3,C,Y,CY,1,Rotation modérée,10095.8,353.0,0.5006936329192516,1,0,462.0,0,Actif
+P0256,Panneau Solaire 100W,Solaire,Generic,Chine,64.0,80.0,0.25,C,Z,CZ,0,Dormant — risque obsolescence,1600.0,20.0,1.0474458731327634,715,23,0.0,1,À risque
+P0257,Panneau Solaire 150W,Solaire,Generic,Chine,96.0,120.0,0.25,C,Y,CY,0,Dormant — risque obsolescence,2400.0,20.0,0.6274950199005566,702,23,0.0,1,À risque
+P0258,Panneau Solaire 200W,Solaire,Generic,Chine,128.0,160.0,0.25,C,Y,CY,0,Dormant — risque obsolescence,2400.0,15.0,0.9949874371066196,752,24,0.0,1,À risque
+P0259,Batterie panneau solaire 100Ah,Solaire,Generic,Chine,152.0,190.0,0.25,C,Z,CZ,0,Dormant — risque obsolescence,5320.0,28.0,1.143543749793731,273,9,0.0,1,À risque
+P0260,Rack 9U,Rack,Generic,Chine,192.0,249.6,0.3,C,Y,CY,2,Bestseller stable,15974.4,64.0,0.7228896488707279,33,1,768.0,0,Actif
+P0261,Rack 12U,Rack,Generic,Chine,270.0,351.0,0.3,C,Y,CY,0,Dormant — risque obsolescence,8775.0,25.0,0.8270801281989179,42,1,270.0,0,Actif
+P0262,Rack 22U,Rack,Generic,Chine,415.0,539.5,0.3,B,Y,BY,2,Bestseller stable,38844.0,72.0,0.5600909953542577,130,4,0.0,1,À risque

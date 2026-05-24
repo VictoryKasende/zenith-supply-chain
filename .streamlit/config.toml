@@ -1,0 +1,29 @@
+## Configuration Streamlit — Charte Zenith Informatique & Bureautique
+## Palette extraite du logo officiel : bleu #1D3B8A, rouge #E63946, blanc
+## Police sans-serif moderne, layout wide, sans télémétrie
+
+[theme]
+base = "light"
+primaryColor = "#1D3B8A"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F8FAFC"
+textColor = "#0F172A"
+font = "sans serif"
+
+[server]
+headless = true
+runOnSave = false
+fileWatcherType = "none"
+enableXsrfProtection = true
+maxUploadSize = 50
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = false
+
+[runner]
+magicEnabled = true
+fastReruns = true
