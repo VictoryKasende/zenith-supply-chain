@@ -1,0 +1,5 @@
+Configuration,MAE,Cout_total_USD
+Pipeline complet (référence),8.243,54143.71
+Sans classification (seasonal naive),8.52,75801.19
+Sans détection obsolescence,7.255,64972.45
+Sans optimisation linéaire,8.243,76979.92

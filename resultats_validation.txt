@@ -1,0 +1,112 @@
+══════════════════════════════════════════════════════════════════════
+H1 — Différenciation par classe
+══════════════════════════════════════════════════════════════════════
+  Test : Wilcoxon signé-rangé apparié (pipeline diff. vs seasonal naive)
+  Paires (produits)  : 177
+  Statistique W      : 3264.000
+  p-valeur (one-sided): 1.065e-01
+  Médiane Δ MAE      : 0.000
+  MAE moy. pipeline  : 8.243
+  MAE moy. naive     : 8.520
+  Conclusion         : NON VALIDÉE
+
+══════════════════════════════════════════════════════════════════════
+H2 — Complémentarité statistique-apprentissage
+══════════════════════════════════════════════════════════════════════
+  Test : Diebold-Mariano (HLN, h = horizon test) par paire de modèles
+  Produits évalués   : 177 (erreurs : 708)
+
+  ── Global ──
+    LightGBM_vs_SARIMA        : DM = -1.893, p = 5.873e-02
+    SARIMA_vs_Naive           : DM = 3.325, p = 9.285e-04
+    LightGBM_vs_Naive         : DM = 2.437, p = 1.506e-02
+
+  ── Classe A ──
+    LightGBM_vs_SARIMA        : DM = -1.454, p = 1.476e-01
+    Naive_vs_SARIMA           : DM = -2.349, p = 1.981e-02
+    LightGBM_vs_Naive         : DM = 1.339, p = 1.820e-01
+
+  ── Classe B ──
+    LightGBM_vs_SARIMA        : DM = -1.430, p = 1.546e-01
+    Naive_vs_SARIMA           : DM = -1.416, p = 1.587e-01
+    LightGBM_vs_Naive         : DM = 0.399, p = 6.906e-01
+
+  ── Classe C ──
+    LightGBM_vs_SARIMA        : DM = -1.016, p = 3.102e-01
+    Naive_vs_SARIMA           : DM = -2.262, p = 2.432e-02
+    LightGBM_vs_Naive         : DM = 1.985, p = 4.793e-02
+
+  Conclusion : 2/3 paires significatives au seuil 5 %
+
+══════════════════════════════════════════════════════════════════════
+H3 — Détection précoce d'obsolescence
+══════════════════════════════════════════════════════════════════════
+  Test : Précision + F1-score + bootstrap (B=1000) sur F1
+  TP=58  FP=15  FN=0  TN=177
+  Précision          : 0.795
+  Rappel             : 1.000
+  F1-score           : 0.885
+  IC 95 % bootstrap  : [0.825, 0.934]
+  Conclusion         : VALIDÉE
+
+══════════════════════════════════════════════════════════════════════
+H4 — Optimisation supérieure à l'heuristique
+══════════════════════════════════════════════════════════════════════
+  Test : Wilcoxon apparié sur coûts (produit × mois) + bootstrap éco. annuelle
+  Paires (produit-mois) : 531
+  Coût LP total         : 54143.71 USD
+  Coût empirique total  : 73525.06 USD
+  Médiane Δ (LP-EMP)    : -5.808 USD
+  Statistique W         : 2683.500
+  p-valeur (one-sided)  : 4.696e-42
+  Économie annualisée   : 77525.41 USD
+  IC 95 % bootstrap     : [61823.97, 96900.26]
+  Conclusion            : VALIDÉE
+
+══════════════════════════════════════════════════════════════════════
+H5 — Impact financier mesurable
+══════════════════════════════════════════════════════════════════════
+  Test : bootstrap B=1000 sur le gain net annualisé + test t unilatéral
+  Paires (produit-mois)    : 531
+  Bénéfice net annualisé   : 38622.04 USD
+  Bénéfice moy. par obs.   : 72.73 USD
+  IC 95 % bootstrap        : [22434.18, 58502.00]
+  Statistique t            : 4.195
+  p-valeur (one-sided > 0) : 1.602e-05
+  Conclusion               : VALIDÉE
+
+══════════════════════════════════════════════════════════════════════
+ANALYSES COMPLÉMENTAIRES
+══════════════════════════════════════════════════════════════════════
+
+Baselines (MAE moyen sur fenêtre test) :
+  Modèle                    |  MAE moyen | Rang
+  --------------------------------------------------
+  moving_average            |      7.515 | 1
+  croston_classic           |      7.675 | 2
+  pipeline_diff             |      8.243 | 3
+  seasonal_naive            |      8.520 | 4
+  lightgbm_quick            |      9.438 | 5
+  sarima_quick              |     10.821 | 6
+
+SHAP — Top 10 features LightGBM (mean |SHAP|) :
+   1. mois_sin                  7.3138
+   2. ma_12                     4.1517
+   3. ma_3                      2.1155
+   4. mois                      2.1104
+   5. lag_12                    2.0652
+   6. lag_6                     1.9406
+   7. lag_3                     1.9317
+   8. ma_6                      1.9112
+   9. lag_2                     1.6869
+  10. lag_1                     1.3772
+
+Ablation :
+  Configuration                            |      MAE | Coût total (USD)
+  ---------------------------------------------------------------------------
+  Pipeline complet (référence)             |    8.243 |         54143.71
+  Sans classification (seasonal naive)     |    8.520 |         75801.19
+  Sans détection obsolescence              |    7.255 |         64972.45
+  Sans optimisation linéaire               |    8.243 |         76979.92
+
+══════════════════════════════════════════════════════════════════════
