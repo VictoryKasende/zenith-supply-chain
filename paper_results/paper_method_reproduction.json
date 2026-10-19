@@ -1,0 +1,50 @@
+{
+  "description": "plan août → octobre 2025 jugé contre la demande PRÉVUE (méthode de l'article)",
+  "n_products_lp": 177,
+  "n_products_incumbent_as_published": 250,
+  "lp": {
+    "total_cost": 54143.71,
+    "unit_fill_rate_vs_forecast_pct": 70.23
+  },
+  "incumbent_as_published_250": {
+    "total_cost": 76979.92,
+    "unit_fill_rate_vs_forecast_pct": 69.49
+  },
+  "incumbent_paired_177": {
+    "total_cost": 73525.06,
+    "unit_fill_rate_vs_forecast_pct": 69.49
+  },
+  "savings_pct_as_published": -29.665151639544444,
+  "savings_pct_paired": -26.36019610184609,
+  "paired_difference_usd_3_months": 19381.35,
+  "paired_difference_annualised_x4": 77525.4,
+  "n_product_month_pairs": 531,
+  "published": {
+    "lp": 55029,
+    "incumbent": 76740,
+    "pct": -28.3,
+    "service": [
+      69.19,
+      69.94
+    ],
+    "h4_pairs": 531,
+    "h4_diff": 19381,
+    "h4_annual": 77525
+  },
+  "note": "les valeurs publiées 55 029 / 76 740 / 69,19 / 69,94 viennent de outputs/tables/optimization_summary.md (exécution antérieure, texte saisi à la main)",
+  "data_audit": {
+    "share_consecutive_rows_stock_consistent_product_store": 0.8652102225886232,
+    "share_consecutive_rows_stock_consistent_product_only": 0.24988059701492538,
+    "share_rows_stock_increase_product_store": 0.11759946261182865,
+    "sales_rows_leaving_store_at_zero_stock": 802,
+    "products_with_such_rows": 194,
+    "article_lstm_products": 49,
+    "article_lstm_products_mae_identical_to_seasonal_naive": 49,
+    "data_period": [
+      "2022-08-01",
+      "2025-07-31"
+    ],
+    "n_products": 250,
+    "n_stores": 7
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "best_forecast_baseline": "moving_average_3",
+  "best_baseline_ranking_dev": [
+    {
+      "model": "moving_average_3",
+      "MASE_m1": 0.7998854149215384,
+      "MAE": 7.876175127585281,
+      "n_pairs": 2732
+    },
+    {
+      "model": "lightgbm_uniform",
+      "MASE_m1": 0.8623732110470381,
+      "MAE": 8.560501322967653,
+      "n_pairs": 2732
+    },
+    {
+      "model": "seasonal_naive",
+      "MASE_m1": 0.9880860626465221,
+      "MAE": 9.69849583669084,
+      "n_pairs": 2732
+    },
+    {
+      "model": "lightgbm_global",
+      "MASE_m1": 1.0636812585979045,
+      "MAE": 9.065585998616639,
+      "n_pairs": 2732
+    },
+    {
+      "model": "sarima_uniform",
+      "MASE_m1": 1.396253350046107,
+      "MAE": 12.844016081693587,
+      "n_pairs": 2732
+    },
+    {
+      "model": "croston_sba",
+      "MASE_m1": 1.7608813081960282,
+      "MAE": 11.293135085272127,
+      "n_pairs": 2732
+    },
+    {
+      "model": "croston",
+      "MASE_m1": 1.8301632558474923,
+      "MAE": 11.64119418971142,
+      "n_pairs": 2732
+    }
+  ],
+  "z_tuned_on_dev": {
+    "sS": {
+      "A": 1.28,
+      "B": 1.645,
+      "C": 2.0
+    },
+    "OUT": {
+      "A": 0.5,
+      "B": 0.75,
+      "C": 0.75
+    },
+    "MA3": {
+      "A": 1.0,
+      "B": 1.0,
+      "C": 1.0
+    }
+  },
+  "n_products": 246,
+  "dev_months": [
+    "2024-02-01",
+    "2024-03-01",
+    "2024-04-01",
+    "2024-05-01",
+    "2024-06-01",
+    "2024-07-01",
+    "2024-08-01",
+    "2024-09-01",
+    "2024-10-01",
+    "2024-11-01",
+    "2024-12-01"
+  ],
+  "test_months": [
+    "2025-01-01",
+    "2025-02-01",
+    "2025-03-01",
+    "2025-04-01",
+    "2025-05-01",
+    "2025-06-01",
+    "2025-07-01"
+  ],
+  "initial_stock_units": 24996.0,
+  "cost_definitions": "commande 50 $/commande ; stockage stock_fin × coût × 0,1 %/j × 30 ; rupture unités perdues × (prix − coût) (src.optimization.financial_kpis)",
+  "avg_inventory_value": "moyenne mensuelle de Σ_i stock_fin × coût (valeur totale du stock)",
+  "service_definitions": {
+    "unit_fill_rate": "unités servies / unités demandées",
+    "order_fill_rate": "lignes de vente entièrement servies / lignes de vente",
+    "cycle_service_level": "part des (produit, mois) avec demande > 0 sans aucune unité perdue"
+  }
+}

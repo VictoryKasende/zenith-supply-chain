@@ -25,7 +25,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Iterable
 
-import numpy as np
 import pandas as pd
 from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import StandardScaler
@@ -167,6 +166,25 @@ class ObsolescenceResult:
     n_rules_only: int
 
 
+def business_rule_mask(
+    features: pd.DataFrame,
+    days_threshold: int = 180,
+    months_threshold: int = 6,
+) -> pd.Series:
+    """Règles métier de filet (cf. :func:`detect_obsolescence`).
+
+    - ``jours_depuis_derniere_vente >= days_threshold``
+    - ``nombre_mois_consecutifs_sans_vente >= months_threshold``
+    - ``ratio_ventes_3m_vs_12m < 0.1`` ET produit > 365 jours
+    """
+    age_proxy = features.get("age_produit_jours", pd.Series(365, index=features.index))
+    return (
+        (features["jours_depuis_derniere_vente"] >= days_threshold)
+        | (features["nombre_mois_consecutifs_sans_vente"] >= months_threshold)
+        | ((features["ratio_ventes_3m_vs_12m"] < 0.1) & (age_proxy > 365))
+    )
+
+
 def detect_obsolescence(
     features: pd.DataFrame,
     feature_cols: Iterable[str] = DEFAULT_FEATURES,
@@ -206,12 +224,7 @@ def detect_obsolescence(
     iforest_flag = out["a_risque_obsolescence"].copy()
     n_rules_only = 0
     if apply_business_rules:
-        age_proxy = out.get("age_produit_jours", pd.Series(365, index=out.index))
-        rule_mask = (
-            (out["jours_depuis_derniere_vente"] >= 180)
-            | (out["nombre_mois_consecutifs_sans_vente"] >= 6)
-            | ((out["ratio_ventes_3m_vs_12m"] < 0.1) & (age_proxy > 365))
-        )
+        rule_mask = business_rule_mask(out)
         out.loc[rule_mask, "a_risque_obsolescence"] = 1
         n_rules_only = int(((out["a_risque_obsolescence"] == 1) & (iforest_flag == 0)).sum())
 

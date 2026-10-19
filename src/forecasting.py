@@ -27,7 +27,6 @@ Notes d'implémentation
 """
 from __future__ import annotations
 
-import logging
 import warnings
 from dataclasses import dataclass
 from typing import Iterable, Optional
@@ -297,6 +296,27 @@ def choose_model(
     if classe_abc == "B":
         return "lightgbm"
     return "sarima"
+
+
+def assign_model(
+    history: pd.Series,
+    classe_abc: str,
+    classe_xyz: str,
+    is_obsolete: bool,
+    has_history: bool = True,
+) -> str:
+    """Affectation modèle ↔ produit telle qu'appliquée par l'Étape 5.
+
+    Intermittent : ≤ 30 % de mois actifs ou classe Z. Cold-start : pas
+    d'historique ou moins de 6 points.
+    """
+    months_active = int((history > 0).sum())
+    is_intermittent = (
+        months_active / max(len(history), 1) <= INTERMITTENT_THRESHOLD
+        or classe_xyz == "Z"
+    )
+    is_cold = (not has_history) or len(history.dropna()) < 6
+    return choose_model(classe_abc, classe_xyz, is_intermittent, is_obsolete, is_cold)
 
 
 # =================================================================== #

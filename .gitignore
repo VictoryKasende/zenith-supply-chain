@@ -14,3 +14,6 @@ data/results/cluster_profile.csv
 # Logs
 *.log
 
+
+# Cache des expériences de révision (régénérable)
+paper_results/_cache/

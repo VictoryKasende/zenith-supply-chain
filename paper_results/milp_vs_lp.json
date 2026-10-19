@@ -1,0 +1,1213 @@
+{
+  "instance": {
+    "n_products_active": 177,
+    "horizon_months": 3,
+    "months": [
+      "2025-08-01",
+      "2025-09-01",
+      "2025-10-01"
+    ],
+    "rho_in_transit": "0 (aucune donnée de commandes en transit)",
+    "big_M": "M_i = max(m_i, ⌈Σ_t d̂_i,t⌉, 1) — commander plus que la demande de l'horizon est dominé",
+    "rounding_in_code": "int(np.round(q)) — au plus proche (src/optimization.py:184), pas à l'entier supérieur"
+  },
+  "reproduction": {
+    "optimize_orders_status": "Optimal",
+    "replica_matches_optimize_orders": true,
+    "replica_matches_published_commandes_centrales": true,
+    "cout_total_simule_usd_recomputed": 54143.71,
+    "note": "cout_total_simule_usd = coût de l'article (financial_kpis) sur ce plan, évalué contre la demande PRÉVUE"
+  },
+  "scenarios": [
+    {
+      "budget_usd": 500000.0,
+      "moq": "none",
+      "objective": "code",
+      "milp": {
+        "status": "Optimal",
+        "cbc_result": "Optimal solution found",
+        "objective": 709868.0941868379,
+        "best_bound": 709868.0941868379,
+        "gap_relative": 0.0,
+        "cbc_gap": null,
+        "seconds": 9.658340500027407,
+        "nodes": 80.0,
+        "n_vars": 2124,
+        "n_integer_vars": 1062,
+        "n_constraints": 1068,
+        "time_limit_s": 600,
+        "cbc_version": "2.10.3"
+      },
+      "milp_plan": {
+        "objective_code": 709868.092212603,
+        "objective_paper": 613345.4657827624,
+        "n_orders": 153,
+        "units_ordered": 3885,
+        "spend_by_month": [
+          204601.5,
+          95143.0,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          15.774,
+          6.664
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.7022265021629719
+      },
+      "lp_relaxation_as_coded": {
+        "status": "Optimal",
+        "objective_lp": 709109.7473495317,
+        "n_vars": 1593,
+        "n_constraints": 537,
+        "seconds": 0.3305811999598518
+      },
+      "lp_rounded_nearest (code)": {
+        "objective_code": 732507.4362232685,
+        "objective_paper": 631692.6940841228,
+        "n_orders": 178,
+        "units_ordered": 3817,
+        "spend_by_month": [
+          179325.1,
+          107750.6,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.902,
+          6.196
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.7003311583061698
+      },
+      "lp_rounded_up": {
+        "objective_code": 711060.1719767689,
+        "objective_paper": 615619.3260987205,
+        "n_orders": 185,
+        "units_ordered": 3912,
+        "spend_by_month": [
+          187518.9,
+          116274.9,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          10.094,
+          6.92
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.7023474391707223
+      },
+      "cost_gap_lp_rounded_nearest_vs_milp_pct": 3.1892325150297283,
+      "cost_gap_lp_rounded_up_vs_milp_pct": 0.1679297572666348
+    },
+    {
+      "budget_usd": 500000.0,
+      "moq": "1_month",
+      "objective": "code",
+      "milp": {
+        "status": "Optimal",
+        "cbc_result": "Optimal solution found",
+        "objective": 711502.1631955213,
+        "best_bound": 711502.1631955213,
+        "gap_relative": 0.0,
+        "cbc_gap": null,
+        "seconds": 12.474247300007846,
+        "nodes": 28.0,
+        "n_vars": 2124,
+        "n_integer_vars": 1062,
+        "n_constraints": 1599,
+        "time_limit_s": 600,
+        "cbc_version": "2.10.3"
+      },
+      "milp_plan": {
+        "objective_code": 711502.161212603,
+        "objective_paper": 618821.7742827623,
+        "n_orders": 145,
+        "units_ordered": 4290,
+        "spend_by_month": [
+          242903.8,
+          96869.0,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          16.864,
+          10.714
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.7022265021629719
+      },
+      "lp_relaxation_as_coded": {
+        "status": "Optimal",
+        "objective_lp": 709109.7473495317,
+        "n_vars": 1593,
+        "n_constraints": 537,
+        "seconds": 0.3305811999598518
+      },
+      "lp_rounded_nearest (code)": {
+        "objective_code": 732507.4362232685,
+        "objective_paper": 631692.6940841228,
+        "n_orders": 178,
+        "units_ordered": 3817,
+        "spend_by_month": [
+          179325.1,
+          107750.6,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.902,
+          6.196
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 116,
+        "planned_fill_rate": 0.7003311583061698
+      },
+      "lp_rounded_up": {
+        "objective_code": 711060.1719767689,
+        "objective_paper": 615619.3260987205,
+        "n_orders": 185,
+        "units_ordered": 3912,
+        "spend_by_month": [
+          187518.9,
+          116274.9,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          10.094,
+          6.92
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 99,
+        "planned_fill_rate": 0.7023474391707223
+      },
+      "cost_gap_lp_rounded_nearest_vs_milp_pct": 2.952243317837087,
+      "cost_gap_lp_rounded_up_vs_milp_pct": -0.06212057530237522
+    },
+    {
+      "budget_usd": 150000.0,
+      "moq": "none",
+      "objective": "code",
+      "milp": {
+        "status": "Optimal",
+        "cbc_result": "Optimal solution found",
+        "objective": 815225.553671608,
+        "best_bound": 815225.553671608,
+        "gap_relative": 0.0,
+        "cbc_gap": null,
+        "seconds": 28.048686800000723,
+        "nodes": 1400.0,
+        "n_vars": 2124,
+        "n_integer_vars": 1062,
+        "n_constraints": 1068,
+        "time_limit_s": 600,
+        "cbc_version": "2.10.3"
+      },
+      "milp_plan": {
+        "objective_code": 815225.5519942042,
+        "objective_paper": 697663.8399389428,
+        "n_orders": 114,
+        "units_ordered": 2003,
+        "spend_by_month": [
+          149998.0,
+          115816.9,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.861,
+          6.32
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.5366625408059572
+      },
+      "lp_relaxation_as_coded": {
+        "status": "Optimal",
+        "objective_lp": 805174.9652235471,
+        "n_vars": 1593,
+        "n_constraints": 537,
+        "seconds": 0.29305189999286085
+      },
+      "lp_rounded_nearest (code)": {
+        "objective_code": 825778.5653499456,
+        "objective_paper": 705930.2173738064,
+        "n_orders": 111,
+        "units_ordered": 1972,
+        "spend_by_month": [
+          149775.0,
+          107750.6,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.87,
+          6.094
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.5359128347626223
+      },
+      "lp_rounded_up": {
+        "objective_code": 802128.3427098383,
+        "objective_paper": 687753.2131026754,
+        "n_orders": 117,
+        "units_ordered": 2036,
+        "spend_by_month": [
+          157007.0,
+          116274.9,
+          0.0
+        ],
+        "budget_violation_months": 1,
+        "budget_excess_usd_by_month": [
+          7007.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          4.6713,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.973,
+          6.573
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.5373514813523429
+      },
+      "cost_gap_lp_rounded_nearest_vs_milp_pct": 1.2944900132149464,
+      "cost_gap_lp_rounded_up_vs_milp_pct": -1.6065749230170094
+    },
+    {
+      "budget_usd": 150000.0,
+      "moq": "1_month",
+      "objective": "code",
+      "milp": {
+        "status": "Optimal",
+        "cbc_result": "Optimal solution found",
+        "objective": 871875.4612419481,
+        "best_bound": 871875.4612419481,
+        "gap_relative": 0.0,
+        "cbc_gap": null,
+        "seconds": 41.596930300001986,
+        "nodes": 1662.0,
+        "n_vars": 2124,
+        "n_integer_vars": 1062,
+        "n_constraints": 1599,
+        "time_limit_s": 600,
+        "cbc_version": "2.10.3"
+      },
+      "milp_plan": {
+        "objective_code": 871875.4596635303,
+        "objective_paper": 745885.7309884983,
+        "n_orders": 100,
+        "units_ordered": 2148,
+        "spend_by_month": [
+          149999.0,
+          149984.7,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          10.24,
+          8.359
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.5313912356657351
+      },
+      "lp_relaxation_as_coded": {
+        "status": "Optimal",
+        "objective_lp": 805174.9652235471,
+        "n_vars": 1593,
+        "n_constraints": 537,
+        "seconds": 0.29305189999286085
+      },
+      "lp_rounded_nearest (code)": {
+        "objective_code": 825778.5653499456,
+        "objective_paper": 705930.2173738064,
+        "n_orders": 111,
+        "units_ordered": 1972,
+        "spend_by_month": [
+          149775.0,
+          107750.6,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.87,
+          6.094
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 69,
+        "planned_fill_rate": 0.5359128347626223
+      },
+      "lp_rounded_up": {
+        "objective_code": 802128.3427098383,
+        "objective_paper": 687753.2131026754,
+        "n_orders": 117,
+        "units_ordered": 2036,
+        "spend_by_month": [
+          157007.0,
+          116274.9,
+          0.0
+        ],
+        "budget_violation_months": 1,
+        "budget_excess_usd_by_month": [
+          7007.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          4.6713,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.973,
+          6.573
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 62,
+        "planned_fill_rate": 0.5373514813523429
+      },
+      "cost_gap_lp_rounded_nearest_vs_milp_pct": -5.287096201947725,
+      "cost_gap_lp_rounded_up_vs_milp_pct": -7.999665110497374
+    },
+    {
+      "budget_usd": 100000.0,
+      "moq": "none",
+      "objective": "code",
+      "milp": {
+        "status": "Optimal",
+        "cbc_result": "Optimal solution found",
+        "objective": 1059029.6353081258,
+        "best_bound": 1059029.6353081258,
+        "gap_relative": 0.0,
+        "cbc_gap": null,
+        "seconds": 47.689340899989475,
+        "nodes": 3242.0,
+        "n_vars": 2124,
+        "n_integer_vars": 1062,
+        "n_constraints": 1068,
+        "time_limit_s": 600,
+        "cbc_version": "2.10.3"
+      },
+      "milp_plan": {
+        "objective_code": 1059029.6303384253,
+        "objective_paper": 901433.9351310253,
+        "n_orders": 74,
+        "units_ordered": 1448,
+        "spend_by_month": [
+          99997.0,
+          100000.0,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.861,
+          6.015
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.48966596284444297
+      },
+      "lp_relaxation_as_coded": {
+        "status": "Optimal",
+        "objective_lp": 1046102.9808463749,
+        "n_vars": 1593,
+        "n_constraints": 537,
+        "seconds": 0.3554329000180587
+      },
+      "lp_rounded_nearest (code)": {
+        "objective_code": 1064604.6434647632,
+        "objective_paper": 904359.502343583,
+        "n_orders": 69,
+        "units_ordered": 1276,
+        "spend_by_month": [
+          99999.0,
+          99322.0,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.861,
+          6.04
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.47402954739204217
+      },
+      "lp_rounded_up": {
+        "objective_code": 1043293.7625137583,
+        "objective_paper": 887994.6375817118,
+        "n_orders": 74,
+        "units_ordered": 1318,
+        "spend_by_month": [
+          104086.0,
+          107563.0,
+          0.0
+        ],
+        "budget_violation_months": 2,
+        "budget_excess_usd_by_month": [
+          4086.0,
+          7563.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          4.086,
+          7.563,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.933,
+          6.342
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.4750827397216254
+      },
+      "cost_gap_lp_rounded_nearest_vs_milp_pct": 0.5264265480991632,
+      "cost_gap_lp_rounded_up_vs_milp_pct": -1.4858760674749427
+    },
+    {
+      "budget_usd": 100000.0,
+      "moq": "1_month",
+      "objective": "code",
+      "milp": {
+        "status": "Optimal",
+        "cbc_result": "Optimal solution found",
+        "objective": 1158945.550743808,
+        "best_bound": 1158945.550743808,
+        "gap_relative": 0.0,
+        "cbc_gap": null,
+        "seconds": 249.69569550000597,
+        "nodes": 8270.0,
+        "n_vars": 2124,
+        "n_integer_vars": 1062,
+        "n_constraints": 1599,
+        "time_limit_s": 600,
+        "cbc_version": "2.10.3"
+      },
+      "milp_plan": {
+        "objective_code": 1158945.544694721,
+        "objective_paper": 985285.7572184844,
+        "n_orders": 68,
+        "units_ordered": 1698,
+        "spend_by_month": [
+          99999.0,
+          99986.7,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.962,
+          7.087
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.5024600378012947
+      },
+      "lp_relaxation_as_coded": {
+        "status": "Optimal",
+        "objective_lp": 1046102.9808463749,
+        "n_vars": 1593,
+        "n_constraints": 537,
+        "seconds": 0.3554329000180587
+      },
+      "lp_rounded_nearest (code)": {
+        "objective_code": 1064604.6434647632,
+        "objective_paper": 904359.502343583,
+        "n_orders": 69,
+        "units_ordered": 1276,
+        "spend_by_month": [
+          99999.0,
+          99322.0,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.861,
+          6.04
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 43,
+        "planned_fill_rate": 0.47402954739204217
+      },
+      "lp_rounded_up": {
+        "objective_code": 1043293.7625137583,
+        "objective_paper": 887994.6375817118,
+        "n_orders": 74,
+        "units_ordered": 1318,
+        "spend_by_month": [
+          104086.0,
+          107563.0,
+          0.0
+        ],
+        "budget_violation_months": 2,
+        "budget_excess_usd_by_month": [
+          4086.0,
+          7563.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          4.086,
+          7.563,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.933,
+          6.342
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 42,
+        "planned_fill_rate": 0.4750827397216254
+      },
+      "cost_gap_lp_rounded_nearest_vs_milp_pct": -8.140235894759686,
+      "cost_gap_lp_rounded_up_vs_milp_pct": -9.979052312714717
+    },
+    {
+      "budget_usd": 50000.0,
+      "moq": "none",
+      "objective": "code",
+      "milp": {
+        "status": "Optimal",
+        "cbc_result": "Optimal solution found",
+        "objective": 1612169.1163569088,
+        "best_bound": 1612169.1163569088,
+        "gap_relative": 0.0,
+        "cbc_gap": null,
+        "seconds": 592.4237437000265,
+        "nodes": 146432.0,
+        "n_vars": 2124,
+        "n_integer_vars": 1062,
+        "n_constraints": 1068,
+        "time_limit_s": 600,
+        "cbc_version": "2.10.3"
+      },
+      "milp_plan": {
+        "objective_code": 1612169.1097650682,
+        "objective_paper": 1355861.8486064505,
+        "n_orders": 32,
+        "units_ordered": 421,
+        "spend_by_month": [
+          49999.0,
+          50000.0,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.868,
+          5.969
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.39805047257640025
+      },
+      "lp_relaxation_as_coded": {
+        "status": "Optimal",
+        "objective_lp": 1610137.2495348682,
+        "n_vars": 1593,
+        "n_constraints": 537,
+        "seconds": 0.3028735999832861
+      },
+      "lp_rounded_nearest (code)": {
+        "objective_code": 1619119.8384293579,
+        "objective_paper": 1361745.9455165272,
+        "n_orders": 30,
+        "units_ordered": 416,
+        "spend_by_month": [
+          49608.0,
+          50172.0,
+          0.0
+        ],
+        "budget_violation_months": 1,
+        "budget_excess_usd_by_month": [
+          0.0,
+          172.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.344,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.848,
+          5.997
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.39734998737990623
+      },
+      "lp_rounded_up": {
+        "objective_code": 1607028.7382173748,
+        "objective_paper": 1352910.8352065585,
+        "n_orders": 34,
+        "units_ordered": 436,
+        "spend_by_month": [
+          52649.0,
+          53129.0,
+          0.0
+        ],
+        "budget_violation_months": 2,
+        "budget_excess_usd_by_month": [
+          2649.0,
+          3129.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          5.298,
+          6.258,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.897,
+          6.142
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.39784142727032346
+      },
+      "cost_gap_lp_rounded_nearest_vs_milp_pct": 0.431141412038504,
+      "cost_gap_lp_rounded_up_vs_milp_pct": -0.3188481603175279
+    },
+    {
+      "budget_usd": 50000.0,
+      "moq": "1_month",
+      "objective": "code",
+      "milp": {
+        "status": "Optimal",
+        "cbc_result": "Optimal solution found",
+        "objective": 1646199.6609660764,
+        "best_bound": 1646199.6609660764,
+        "gap_relative": 0.0,
+        "cbc_gap": null,
+        "seconds": 20.132196700025816,
+        "nodes": 1485.0,
+        "n_vars": 2124,
+        "n_integer_vars": 1062,
+        "n_constraints": 1599,
+        "time_limit_s": 600,
+        "cbc_version": "2.10.3"
+      },
+      "milp_plan": {
+        "objective_code": 1646199.6550219967,
+        "objective_paper": 1379115.1318595805,
+        "n_orders": 20,
+        "units_ordered": 422,
+        "spend_by_month": [
+          49988.0,
+          49977.0,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          10.318,
+          6.008
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.39778826186130223
+      },
+      "lp_relaxation_as_coded": {
+        "status": "Optimal",
+        "objective_lp": 1610137.2495348682,
+        "n_vars": 1593,
+        "n_constraints": 537,
+        "seconds": 0.3028735999832861
+      },
+      "lp_rounded_nearest (code)": {
+        "objective_code": 1619119.8384293579,
+        "objective_paper": 1361745.9455165272,
+        "n_orders": 30,
+        "units_ordered": 416,
+        "spend_by_month": [
+          49608.0,
+          50172.0,
+          0.0
+        ],
+        "budget_violation_months": 1,
+        "budget_excess_usd_by_month": [
+          0.0,
+          172.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.344,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.848,
+          5.997
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 18,
+        "planned_fill_rate": 0.39734998737990623
+      },
+      "lp_rounded_up": {
+        "objective_code": 1607028.7382173748,
+        "objective_paper": 1352910.8352065585,
+        "n_orders": 34,
+        "units_ordered": 436,
+        "spend_by_month": [
+          52649.0,
+          53129.0,
+          0.0
+        ],
+        "budget_violation_months": 2,
+        "budget_excess_usd_by_month": [
+          2649.0,
+          3129.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          5.298,
+          6.258,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.897,
+          6.142
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 20,
+        "planned_fill_rate": 0.39784142727032346
+      },
+      "cost_gap_lp_rounded_nearest_vs_milp_pct": -1.6449898109277032,
+      "cost_gap_lp_rounded_up_vs_milp_pct": -2.379475459439245
+    },
+    {
+      "budget_usd": 500000.0,
+      "moq": "none",
+      "objective": "paper",
+      "milp": {
+        "status": "Optimal",
+        "cbc_result": "Optimal solution found",
+        "objective": 613112.8924316432,
+        "best_bound": 613112.8924316432,
+        "gap_relative": 0.0,
+        "cbc_gap": null,
+        "seconds": 5.147590700013097,
+        "nodes": 72.0,
+        "n_vars": 2124,
+        "n_integer_vars": 1062,
+        "n_constraints": 1068,
+        "time_limit_s": 600,
+        "cbc_version": "2.10.3"
+      },
+      "milp_plan": {
+        "objective_code": 709924.6514328157,
+        "objective_paper": 613112.8906825231,
+        "n_orders": 150,
+        "units_ordered": 3838,
+        "spend_by_month": [
+          203663.0,
+          96045.2,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          15.341,
+          6.656
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.6980853072689375
+      },
+      "lp_relaxation_as_coded": {
+        "status": "Optimal",
+        "objective_lp": 709109.7473495317,
+        "n_vars": 1593,
+        "n_constraints": 537,
+        "seconds": 0.3305811999598518
+      },
+      "lp_rounded_nearest (code)": {
+        "objective_code": 732507.4362232685,
+        "objective_paper": 631692.6940841228,
+        "n_orders": 178,
+        "units_ordered": 3817,
+        "spend_by_month": [
+          179325.1,
+          107750.6,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.902,
+          6.196
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.7003311583061698
+      },
+      "lp_rounded_up": {
+        "objective_code": 711060.1719767689,
+        "objective_paper": 615619.3260987205,
+        "n_orders": 185,
+        "units_ordered": 3912,
+        "spend_by_month": [
+          187518.9,
+          116274.9,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          10.094,
+          6.92
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.7023474391707223
+      },
+      "cost_gap_lp_rounded_nearest_vs_milp_pct": 3.0304049521640986,
+      "cost_gap_lp_rounded_up_vs_milp_pct": 0.40880487986596015
+    },
+    {
+      "budget_usd": 500000.0,
+      "moq": "1_month",
+      "objective": "paper",
+      "milp": {
+        "status": "Optimal",
+        "cbc_result": "Optimal solution found",
+        "objective": 618516.3175169677,
+        "best_bound": 618516.3175169677,
+        "gap_relative": 0.0,
+        "cbc_gap": null,
+        "seconds": 8.433093899977393,
+        "nodes": 45.0,
+        "n_vars": 2124,
+        "n_integer_vars": 1062,
+        "n_constraints": 1599,
+        "time_limit_s": 600,
+        "cbc_version": "2.10.3"
+      },
+      "milp_plan": {
+        "objective_code": 711548.6935982561,
+        "objective_paper": 618516.3157361232,
+        "n_orders": 143,
+        "units_ordered": 4202,
+        "spend_by_month": [
+          239596.8,
+          100013.0,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          16.341,
+          10.296
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 0,
+        "planned_fill_rate": 0.6980824525694185
+      },
+      "lp_relaxation_as_coded": {
+        "status": "Optimal",
+        "objective_lp": 709109.7473495317,
+        "n_vars": 1593,
+        "n_constraints": 537,
+        "seconds": 0.3305811999598518
+      },
+      "lp_rounded_nearest (code)": {
+        "objective_code": 732507.4362232685,
+        "objective_paper": 631692.6940841228,
+        "n_orders": 178,
+        "units_ordered": 3817,
+        "spend_by_month": [
+          179325.1,
+          107750.6,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          9.902,
+          6.196
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 116,
+        "planned_fill_rate": 0.7003311583061698
+      },
+      "lp_rounded_up": {
+        "objective_code": 711060.1719767689,
+        "objective_paper": 615619.3260987205,
+        "n_orders": 185,
+        "units_ordered": 3912,
+        "spend_by_month": [
+          187518.9,
+          116274.9,
+          0.0
+        ],
+        "budget_violation_months": 0,
+        "budget_excess_usd_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "budget_excess_pct_by_month": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "capacity_use_by_month": [
+          18.367,
+          10.094,
+          6.92
+        ],
+        "capacity_violation_months": 0,
+        "moq_violations": 99,
+        "planned_fill_rate": 0.7023474391707223
+      },
+      "cost_gap_lp_rounded_nearest_vs_milp_pct": 2.1303202539318224,
+      "cost_gap_lp_rounded_up_vs_milp_pct": -0.4683772381905346
+    }
+  ]
+}

@@ -32,14 +32,13 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from src.forecasting import (
-    INTERMITTENT_THRESHOLD,
-    choose_model,
+    assign_model,
     forecast_product,
     monthly_series_by_product,
 )
 from src.utils import (
     FIG_DIR, MODELS_DIR, PROCESSED_DIR, RAW_CATALOGUE, TAB_DIR,
-    TRAIN_END, VAL_END, setup_logger, temporal_split,
+    VAL_END, setup_logger,
 )
 
 logger = setup_logger("pipeline.forecasting")
@@ -85,7 +84,6 @@ def fig_real_vs_pred(records: list, monthly_full: pd.DataFrame, classes: pd.Data
         if r.produit_id not in monthly_full.columns:
             continue
         ts = monthly_full[r.produit_id].astype(float)
-        last_history = ts.iloc[:-r.horizon] if len(ts) > r.horizon else ts
         future_idx = ts.index[-r.horizon:] if len(ts) >= r.horizon else pd.date_range(ts.index[-1], periods=r.horizon, freq="MS")
         ax = axes[i]
         ax.plot(ts.index, ts.values, color="#1f4e79", linewidth=1.5, label="réel")
@@ -170,13 +168,8 @@ def main() -> int:
         has_history = pid in monthly_train.columns
         history = monthly_train[pid].astype(float) if has_history else pd.Series(dtype=float)
 
-        months_active = int((history > 0).sum())
-        is_intermittent = (
-            months_active / max(len(history), 1) <= INTERMITTENT_THRESHOLD
-            or classe_xyz == "Z"
-        )
         is_cold = (not has_history) or len(history.dropna()) < 6
-        model_name = choose_model(classe_abc, classe_xyz, is_intermittent, is_obs, is_cold)
+        model_name = assign_model(history, classe_abc, classe_xyz, is_obs, has_history)
 
         test_actual = monthly_test[pid].astype(float) if pid in monthly_test.columns else None
         r = forecast_product(

@@ -1,0 +1,13 @@
+service_definition,target,min_budget_usd,min_penalty_factor,max_achieved_over_budget_sweep,sS_cheapest_z_reaching_target,sS_cost_at_that_z
+unit_fill_rate,0.7,200000.0,1.0,0.8283496628069729,1.0,165026.42599999998
+unit_fill_rate,0.8,300000.0,1.0,0.8283496628069729,1.0,165026.42599999998
+unit_fill_rate,0.9,infeasible,infeasible,0.8283496628069729,1.0,165026.42599999998
+unit_fill_rate,0.95,infeasible,infeasible,0.8283496628069729,1.5,173099.4205
+order_fill_rate,0.7,200000.0,1.0,0.8321321321321321,1.0,165026.42599999998
+order_fill_rate,0.8,300000.0,1.0,0.8321321321321321,1.0,165026.42599999998
+order_fill_rate,0.9,infeasible,infeasible,0.8321321321321321,1.0,165026.42599999998
+order_fill_rate,0.95,infeasible,infeasible,0.8321321321321321,1.645,176089.604
+cycle_service_level,0.7,300000.0,1.0,0.7008064516129032,1.0,165026.42599999998
+cycle_service_level,0.8,infeasible,infeasible,0.7008064516129032,1.0,165026.42599999998
+cycle_service_level,0.9,infeasible,infeasible,0.7008064516129032,1.28,167811.26
+cycle_service_level,0.95,infeasible,infeasible,0.7008064516129032,2.33,200592.54100000003

@@ -35,7 +35,7 @@ import pandas as pd
 from scipy import stats
 
 warnings.filterwarnings("ignore")
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 TAB = ROOT / "outputs" / "tables"

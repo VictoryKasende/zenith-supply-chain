@@ -10,16 +10,32 @@ Ce dépôt livre :
 2. les **datasets et tableaux de bord Power BI** prêts à l'emploi ;
 3. l'intégralité des **résultats expérimentaux** pour le **Chapitre 4 du mémoire**.
 
-## Verdict de l'évaluation (6/6 hypothèses validées)
+## Verdict de l'évaluation (protocole de révision, sans fuite temporelle)
 
-| Hypothèse | Verdict | Valeur mesurée |
-|---|---|---:|
-| **H1** — Différenciation par classe | ✅ Validée | MAE -57.5 % vs pire modèle isolé |
-| **H2** — Complémentarité stat / ML | ✅ Validée | 2/3 classes ont leur modèle attendu en tête |
-| **H3** — Détection précoce d'obsolescence | ✅ Validée | Rappel 100 % (58/58) |
-| **H4** — Optimisation > heuristique | ✅ Validée | Coût total LP -28 % vs empirique |
-| **H5** — Impact financier mesurable | ✅ Validée | Bénéfice net +5 259 USD sur 3 mois |
-| **H6** — Faisabilité PME | ✅ Validée | Pipeline complet en 213 s, sans GPU, 20 dépendances |
+Prévisions évaluées en rolling-origin (16 origines mensuelles, tout réappris sur les
+seules données passées) ; politiques de commande simulées sur la demande réellement
+observée (période de test janvier → juillet 2025) et comparées à des politiques
+classiques réglées sur une période de développement distincte. Chiffres, protocole et
+sources : [`paper_results/RESULTS_FOR_PAPER.md`](paper_results/RESULTS_FOR_PAPER.md).
+
+| Hypothèse | Verdict | Résultat mesuré |
+|---|---|---|
+| **H1** — Différenciation par classe | ❌ Non validée | MASE 0,836 contre 0,749 pour une moyenne mobile 3 mois, qui reste meilleure (Wilcoxon, p = 1,00). Le pipeline bat seulement le seasonal naive (p ajusté = 0,006). |
+| **H2** — Complémentarité stat / ML | ⚠️ Partielle | LightGBM bat SARIMA (Diebold-Mariano, p ajusté = 0,029) mais pas le seasonal naive (p = 0,155) ; SARIMA fait moins bien que le seasonal naive. |
+| **H3** — Détection précoce d'obsolescence | ✅ Validée, avec réserve | Vérité prospective (6 mois) : rappel 0,931, précision 0,507, F1 = 0,657 [0,532 ; 0,743], alerte médiane 62 jours avant la dormance. Une simple règle « 90 jours sans vente » atteint F1 = 0,857, mais alerte 91 jours après. |
+| **H4** — Optimisation > heuristique | ❌ Non validée | Coût −6,4 % face à la politique empirique, non significatif (p ajusté = 0,39). Une politique (s, S) bien réglée fait −27,6 % avec 96,9 % de service, contre 82,8 % pour le pipeline. |
+| **H5** — Impact financier mesurable | ❌ Non validée | Gain net estimé à 25 707 USD/an, IC 95 % [−17 915 ; 67 188] : l'intervalle contient 0. |
+| **H6** — Faisabilité PME | ❌ Non validée (critères ≤ 5 min et ≤ 20 dépendances) | 780 ± 231 s sur un portable 4 cœurs sans GPU, 375 Mo de mémoire, 23 dépendances déclarées. |
+
+Ce qui est établi : la détection d'obsolescence a une vraie valeur (la retirer fait
+passer le coût de 217 597 à 254 049 USD sur la période de test) ; le MILP de commande se
+résout exactement en moins de 10 minutes, la relaxation arrondie n'est donc pas
+nécessaire. Limite principale du pipeline : le LP planifie exactement la prévision, sans
+stock de sécurité, ce qui plafonne le taux de service vers 83 %.
+
+La version initiale annonçait 6/6 hypothèses validées : elle reposait sur des coûts
+jugés contre la prévision plutôt que contre la demande, sur des multiplicateurs codés en
+dur pour l'ablation et sur une vérité terrain d'obsolescence circulaire.
 
 ## Pipeline en 9 étapes
 
@@ -143,8 +159,36 @@ streamlit run app/zenith_tool.py
 
 ```bash
 PYTHONPATH=. pytest tests/ -v
-# 55 passed
+# 78 passed
 ```
+
+## Expériences de révision (article IEEE)
+
+Le package `experiments/` rejoue l'évaluation avec un protocole sans fuite
+temporelle et écrit tous ses résultats dans `paper_results/` :
+
+```bash
+python -m experiments.run_all            # tout depuis zéro (≈ 4-5 h sur 4 cœurs, dont ≈ 1 h 15 de chronométrage)
+python -m experiments.run_all --keep-cache --skip-benchmark   # réutilise les prévisions en cache
+python -m experiments.rolling_origin     # ou une expérience seule (P0-1)
+```
+
+| Script | Expérience | Sortie principale |
+|---|---|---|
+| `paper_reproduction.py` | chiffres publiés recalculés par le code d'origine | `paper_method_reproduction.json` |
+| `rolling_origin.py` | backtest rolling-origin, tout réappris sur ≤ t0 | `rolling_origin_errors.csv` |
+| `metrics.py` | MAE, MASE, RMSSE, WAPE, biais | `forecast_metrics.csv` |
+| `stats_tests.py` | Wilcoxon, Diebold-Mariano HLN, Holm, bootstrap | `stat_tests.json` |
+| `obsolescence_eval.py` | vérité terrain prospective, 4 détecteurs | `obsolescence_eval.csv` |
+| `milp_vs_lp.py` | MILP exact vs LP arrondi, faisabilité | `milp_vs_lp.json` |
+| `policy_baselines.py` | politiques sur demande réalisée | `policy_comparison.csv` |
+| `service_tradeoff.py` | coût / service, cibles de service | `service_tradeoff.csv` |
+| `sensitivity.py` | sensibilité une-variable-à-la-fois | `sensitivity.csv` |
+| `benchmark_env.py` | environnement, temps et mémoire mesurés | `runtime.csv` |
+| `report.py` | synthèse chiffrée pour l'article | `RESULTS_FOR_PAPER.md` |
+
+L'absence de fuite est vérifiée par `tests/test_exp_no_leakage.py`. Seed 42,
+un thread BLAS/OpenMP ; `paper_results/_cache/` est régénérable et non versionné.
 
 ## Correspondance code ↔ mémoire
 
